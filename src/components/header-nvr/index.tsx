@@ -19,7 +19,7 @@ const Header = () => (
       </h1>
       <div className={tw(`max-w-xl mx-auto`)}>
         <p className={tw(`mt-10 text-gray-500 text-center text-xl lg:text-3xl`)}>
-          Узнайте стоимость ремонта квартиры в Новороссийске под ключ.
+          Узнайте стоимость ремонта квартиры в Новороссийске под ключ
         </p>
       </div>
       <div className={tw(`mt-10 flex flex-wrap justify-center items-center text-center mx-auto`)}>
