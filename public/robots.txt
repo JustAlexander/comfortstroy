@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://comfortstroy.pro
+
+# Sitemaps
+Sitemap: https://comfortstroy.pro/sitemap.xml
