@@ -6,10 +6,7 @@ import Footer from '@/components/footer';
 export default function Zamer() {
   return (
     <Page>
-      <NextSeo
-        title="Вызвать замерщика для ремонта квартиры — Комфорт Строй Про"
-        description="Сделать заявку на вывоз замерщика бесплатно"
-      />
+      <NextSeo title="Вызвать замерщика для ремонта квартиры — Комфорт Строй Про" description="Сделать заявку на вывоз замерщика бесплатно" />
       <main>
         <FormZamer />
       </main>

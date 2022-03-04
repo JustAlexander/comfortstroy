@@ -14,13 +14,9 @@ const headerStyle = css`
 const Header = () => (
   <header className={tw(headerStyle)}>
     <div className={tw(`max-w-4xl mx-auto py-16 px-14 sm:px-6 lg:px-8`)}>
-      <h1 className={tw(`font-sans font-bold text-4xl md:text-5xl lg:text-8xl text-center leading-snug text-gray-800`)}>
-        Ремонт квартир в Новороссийске
-      </h1>
+      <h1 className={tw(`font-sans font-bold text-4xl md:text-5xl lg:text-8xl text-center leading-snug text-gray-800`)}>Ремонт квартир в Новороссийске</h1>
       <div className={tw(`max-w-xl mx-auto`)}>
-        <p className={tw(`mt-10 text-gray-500 text-center text-xl lg:text-3xl`)}>
-          Узнайте стоимость ремонта квартиры в Новороссийске под ключ
-        </p>
+        <p className={tw(`mt-10 text-gray-500 text-center text-xl lg:text-3xl`)}>Узнайте стоимость ремонта квартиры в Новороссийске под ключ</p>
       </div>
       <div className={tw(`mt-10 flex flex-wrap justify-center items-center text-center mx-auto`)}>
         <div className={tw(`w-full sm:(w-1/3 text-right)`)}>

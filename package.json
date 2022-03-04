@@ -36,17 +36,18 @@
     "@mui/material": "5.2.7",
     "@sendgrid/mail": "7.6.0",
     "@svgr/webpack": "5.5.0",
-    "libphonenumber-js": "1.9.44",
-    "next": "10.0.7",
+    "libphonenumber-js": "1.9.49",
+    "next": "11",
     "next-seo": "4.20.0",
     "photoswipe": "4.1.3",
     "react": "17.0.1",
     "react-dom": "17.0.1",
     "react-modal-video": "1.2.6",
-    "react-particles-js": "3.4.1",
+    "react-particles-js": "3.6.0",
     "react-phone-number-input": "3.1.44",
     "react-photoswipe-gallery": "1.3.6",
-    "twind": "0.15.4"
+    "react-tsparticles": "1.41.5",
+    "twind": "0.16.16"
   },
   "devDependencies": {
     "@commitlint/cli": "11.0.0",
@@ -67,11 +68,12 @@
     "eslint-plugin-prettier": "3.3.1",
     "eslint-plugin-react": "7.22.0",
     "eslint-plugin-react-hooks": "4.2.0",
-    "husky": "5.0.9",
+    "husky": "7.0.4",
     "lint-staged": "10.5.4",
     "next-sitemap": "2.5.1",
     "prettier": "2.2.1",
-    "typescript": "4.1.5"
+    "tsparticles": "1.41.5",
+    "typescript": "4.6.2"
   },
   "config": {
     "commitizen": {

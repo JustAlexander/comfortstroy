@@ -44,7 +44,17 @@
         "specialLink": ["hrefLeft", "hrefRight"],
         "aspects": ["invalidHref", "preferButton"]
       }
-    ]
+    ],
+    "jsx-a11y/label-has-associated-control": ["error", {
+      "required": {
+        "some": ["nesting", "id"]
+      }
+    }],
+    "jsx-a11y/label-has-for": ["error", {
+      "required": {
+        "some": ["nesting", "id"]
+      }
+    }]
   },
   "overrides": [
     {
@@ -62,7 +72,7 @@
         "@typescript-eslint/no-use-before-define": [1],
         "@typescript-eslint/no-explicit-any": "off",
         "@typescript-eslint/no-var-requires": "off",
-        "max-len": ["error", {"code": 120, "ignoreUrls": true}],
+        "max-len": ["error", {"code": 1020, "ignoreUrls": true}],
         "react/jsx-first-prop-new-line": [2, "multiline"],
         "react/jsx-max-props-per-line": [
           2,
