@@ -36,6 +36,7 @@
     "@mui/material": "5.2.7",
     "@sendgrid/mail": "7.6.0",
     "@svgr/webpack": "5.5.0",
+    "@twind/next": "1.0.9",
     "libphonenumber-js": "1.9.49",
     "next": "11",
     "next-seo": "4.20.0",

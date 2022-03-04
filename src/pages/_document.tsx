@@ -1,30 +1,12 @@
 import * as React from 'react';
-import Document, { DocumentContext, Html, Head, Main, NextScript } from 'next/document';
-import { setup } from 'twind';
-import { asyncVirtualSheet, getStyleTagProperties } from 'twind/server';
+import Document, { Html, Head, Main, NextScript } from 'next/document';
+import withTwindDocument from '@twind/next/document';
 import twindConfig from '../twind.config';
 
-const sheet = asyncVirtualSheet();
-
-setup({ ...twindConfig, sheet });
-
 class MyDocument extends Document {
-  static async getInitialProps(ctx: DocumentContext) {
-    sheet.reset();
+  static async getInitialProps(ctx) {
     const initialProps = await Document.getInitialProps(ctx);
-    const { id, textContent } = getStyleTagProperties(sheet);
-    const styleProps = {
-      id,
-      key: id,
-      dangerouslySetInnerHTML: {
-        __html: textContent,
-      },
-    };
-
-    return {
-      ...initialProps,
-      styles: [initialProps.styles, React.createElement(`style`, styleProps)],
-    };
+    return { ...initialProps };
   }
 
   render() {
@@ -40,4 +22,4 @@ class MyDocument extends Document {
   }
 }
 
-export default MyDocument;
+export default withTwindDocument(twindConfig, MyDocument);
