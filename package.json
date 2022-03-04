@@ -72,7 +72,6 @@
     "lint-staged": "10.5.4",
     "next-sitemap": "2.5.1",
     "prettier": "2.2.1",
-    "tsparticles": "1.41.5",
     "typescript": "4.6.2"
   },
   "config": {
