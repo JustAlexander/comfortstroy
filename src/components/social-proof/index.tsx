@@ -1,6 +1,7 @@
 import { tw } from 'twind';
 import { useState } from 'react';
 import Quote from '@/constants/svg/quote.svg';
+import Image from 'next/image';
 
 const socialProofs = [
   {
@@ -83,7 +84,7 @@ const SocialProof = () => {
                 <div className={tw(`flex items-center justify-between`)}>
                   <div className={tw(`flex items-center pb-12`)}>
                     <div className={tw(`h-12 w-12`)}>
-                      <img src={socialProofs[currentIndex].image} alt={socialProofs[currentIndex].name} className={tw(`h-full w-full object-cover overflow-hidden rounded-full`)} height={48} width={48} />
+                      <Image src={socialProofs[currentIndex].image} alt={socialProofs[currentIndex].name} className={tw(`h-full w-full object-cover overflow-hidden rounded-full`)} height={48} width={48} />
                     </div>
                     <p className={tw(`text-gray-600 font-bold ml-3`)}>
                       {socialProofs[currentIndex].name} <br />

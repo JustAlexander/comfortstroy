@@ -2,6 +2,7 @@ import { tw } from 'twind';
 import { useState } from 'react';
 import Button from '@/components/button';
 import NextLink from 'next/link';
+import Image from 'next/image';
 
 interface IMenuButton {
   toggleMenu: React.MouseEventHandler<HTMLButtonElement>;
@@ -87,7 +88,7 @@ const Navigation = () => {
             <div className={tw(`flex-shrink-0`)}>
               <NextLink href="/" passHref>
                 <a>
-                  <img className={tw(`h-12 w-52`)} src="logo.svg" alt="logo" width={48} height={48} />
+                  <Image className={tw(`h-12 w-52`)} src="/logo.svg" alt="logo" width={208} height={48} />
                 </a>
               </NextLink>
             </div>

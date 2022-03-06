@@ -2,6 +2,7 @@ import { tw } from 'twind';
 import Particles from 'react-tsparticles';
 import Arrow from '@/constants/svg/arrow.svg';
 import NextLink from 'next/link';
+import Image from 'next/image';
 
 const ParticleBg = () => (
   <Particles
@@ -122,7 +123,7 @@ const CasesSection = () => (
                 )}
               >
                 <div className={tw(`h-64 z-20`)}>
-                  <img src={article.image} alt={article.alt} className={tw(`h-full w-full object-cover overflow-hidden rounded`)} width={400} height={300} />
+                  <Image src={article.image} alt={article.alt} className={tw(`h-full w-full object-cover overflow-hidden rounded`)} width={400} height={300} />
                 </div>
                 <div className={tw(`p-4 shadow-lg w-full mx-auto -mt-8 bg-white rounded-b z-30 relative`)}>
                   <p className={tw(`uppercase text-sm text-gray-700 text-center pb-1`)}>{article.title}</p>

@@ -4,6 +4,7 @@ import { useState } from 'react';
 import PhoneInput, { isValidPhoneNumber } from 'react-phone-number-input/input';
 import { E164Number } from 'libphonenumber-js/types';
 import NextLink from 'next/link';
+import Image from 'next/image';
 
 const productLinks = [
   {
@@ -116,7 +117,7 @@ const Footer = () => {
         <div className={tw(`mb-14 flex items-center w-full`)}>
           <NextLink href="/" passHref>
             <a>
-              <img className={tw(`h-12 w-52`)} src="logo.svg" alt="logo" width={48} height={48} />
+              <Image className={tw(`h-12 w-52`)} src="/logo.svg" alt="logo" width={208} height={48} />
             </a>
           </NextLink>
         </div>
