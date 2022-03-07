@@ -3,36 +3,15 @@ import Check from '@/constants/svg/check.svg';
 import Button from '@/components/button';
 import NextLink from 'next/link';
 
-const features = [
-  `Разводка и монтаж сантех. узлов`,
-  `Гидроизоляция`,
-  `Стяжка`,
-  `Электромонтажные работы`,
-  `Заделка штраб`,
-  `Грунтовка, штукатурка, шпатлевка стен`,
-  `Устройство откосов`,
-  `Укладка напольного покрытия`,
-  `Оклейка стен обоями`,
-  `Установка дверей`,
-  `Установка сантехники, вентиляции`,
-  `Натяжной потолок`,
-  `Доставка, подъем материалов`,
-  `Вынос и вывоз строительного мусора`,
-];
+const features = [`Разводка и монтаж сантех. узлов`, `Гидроизоляция`, `Стяжка`, `Электромонтажные работы`, `Заделка штраб`, `Грунтовка, штукатурка, шпатлевка стен`, `Устройство откосов`, `Укладка напольного покрытия`, `Оклейка стен обоями`, `Установка дверей`, `Установка сантехники, вентиляции`, `Натяжной потолок`, `Доставка, подъем материалов`, `Вынос и вывоз строительного мусора`];
 
 const PricingTable = () => (
   <section id="price" className={tw(`bg-gradient-to-b from-gray-100 to-white shadow-inner pt-12`)}>
     <div className={tw(`relative max-w-7xl mx-auto mb-24`)}>
       <div className={tw(`overflow-hidden lg:max-w-none lg:flex`)}>
         <div className={tw(`py-8 px-6 md:px-0 lg:flex-shrink-1`)}>
-          <h2 className={tw(`text-4xl lg:text-7xl font-bold text-gray-800 mb-12`)}>
-            Цена на ремонт квартиры в Новороссийске
-          </h2>
-          <p className={tw(`mt-6 text-base leading-6 text-gray-500`)}>
-            Средняя цена ремонта квартиры в Новороссийске от нашей компании Комфорт Строй Про, составляет 5500 руб. за
-            квадратный метр. Ниже представлен полный перечень работ и стоимость. Обратите внимание, что здесь указана
-            цена ремонта квартиры в Новороссийске без учёта материалов.
-          </p>
+          <h2 className={tw(`text-4xl lg:text-7xl font-bold text-gray-800 mb-12`)}>Цена на ремонт квартиры в Новороссийске</h2>
+          <p className={tw(`mt-6 text-base leading-6 text-gray-500`)}>Средняя цена ремонта квартиры в Новороссийске от нашей компании Комфорт Строй Про, составляет 5500 руб. за квадратный метр. Ниже представлен полный перечень работ и стоимость. Обратите внимание, что здесь указана цена ремонта квартиры в Новороссийске без учёта материалов.</p>
           <div className={tw(`mt-8`)}>
             <div className={tw(`flex items-center`)}>
               <h3
@@ -67,9 +46,7 @@ const PricingTable = () => (
             <b>Цена за м2</b>
           </p>
           <p className={tw(`text-lg font-medium text-gray-800`)}>Без учета материалов</p>
-          <div className={tw(`my-4 flex items-center justify-center text-6xl leading-none font-bold text-gray-800`)}>
-            5500 ₽
-          </div>
+          <div className={tw(`my-4 flex items-center justify-center text-6xl leading-none font-bold text-gray-800`)}>5500 ₽</div>
           <NextLink href="/zamer" passHref>
             <a>
               <Button primary modifier="mt-6">

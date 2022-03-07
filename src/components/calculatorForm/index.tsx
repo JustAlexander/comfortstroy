@@ -13,22 +13,22 @@ import { Grid, Typography, Divider, Chip, Alert, Tooltip } from '@mui/material';
 import PhoneInput, { isValidPhoneNumber } from 'react-phone-number-input/input';
 import { E164Number } from 'libphonenumber-js/types';
 
-const monajSanteh = 36000; //33042
-const ustanovkaSanteh = 10428; //8428
+const monajSanteh = 36000;
+const ustanovkaSanteh = 10428;
 const konturTeplPol = 11483;
-const ustanovkaElectroPrib = 10000; //11571
-const sistemaVentil = 6500; //4500
-const gidroMaterial = 7500; //5214
-const deliveryMater = 30000; //25714
+const ustanovkaElectroPrib = 10000;
+const sistemaVentil = 6500;
+const gidroMaterial = 7500;
+const deliveryMater = 30000;
 
 const pereplan = 246;
-const stajkaPola = 700; //594
-const electroMontaj = 1800; //1300
+const stajkaPola = 700;
+const electroMontaj = 1800;
 const potolkiNatajn = 800;
 const potolkiKombin = 1700;
-const malarka = 1146; //1266
-const rabota = 5500; //4685
-const prorab = 609; //509
+const malarka = 1146;
+const rabota = 5500;
+const prorab = 609;
 let itogo = 0;
 let ploshad = 50;
 
@@ -48,7 +48,7 @@ const CalculatorForm = () => {
     isElectroMontaj: true,
     isUstanovkaElectroPrib: true,
   });
-  const [tipPotolka, setTipPotolka] = useState('natajnoy');
+  const [tipPotolka, setTipPotolka] = useState(`natajnoy`);
   const handleChange = (event) => {
     setState({
       ...state,
@@ -60,19 +60,11 @@ const CalculatorForm = () => {
   };
   const raschet = () => {
     let price = 0;
-    price =
-      monajSanteh +
-      ustanovkaSanteh +
-      sistemaVentil +
-      gidroMaterial +
-      deliveryMater +
-      Number(rangeval) * malarka +
-      Number(rangeval) * rabota +
-      Number(rangeval) * prorab;
+    price = monajSanteh + ustanovkaSanteh + sistemaVentil + gidroMaterial + deliveryMater + Number(rangeval) * malarka + Number(rangeval) * rabota + Number(rangeval) * prorab;
     if (state.isPereplan) price += Number(rangeval) * pereplan;
     if (state.isStajka) price += Number(rangeval) * stajkaPola;
     if (state.isTeplPol) price += konturTeplPol * 3;
-    if (tipPotolka === 'natajnoy') price += Number(rangeval) * potolkiNatajn;
+    if (tipPotolka === `natajnoy`) price += Number(rangeval) * potolkiNatajn;
     else price += Number(rangeval) * potolkiKombin;
     if (state.isElectroMontaj) price += Number(rangeval) * electroMontaj;
     if (state.isUstanovkaElectroPrib) price += ustanovkaElectroPrib;
@@ -134,9 +126,7 @@ const CalculatorForm = () => {
       <div className={tw(`max-w-7xl mx-auto p-4 sm:p-6 lg:p-8 bg-white`)}>
         <div className={tw(`mb-4 sm:mb-16 text-center`)}>
           <p className={tw(`text-base text-yellow-600 font-semibold tracking-wide uppercase`)}>Онлайн-калькулятор</p>
-          <h1 className={tw(`mt-2 pb-4 text-4xl lg:text-7xl font-bold tracking-tight text-gray-900`)}>
-            Расчитайте стоимость ремонта
-          </h1>
+          <h1 className={tw(`mt-2 pb-4 text-4xl lg:text-7xl font-bold tracking-tight text-gray-900`)}>Расчитайте стоимость ремонта</h1>
         </div>
         <div className={tw(`min-h-full flex items-center justify-center py-12 px-4 sm:px-6 lg:px-8`)}>
           <div className={tw(`max-w-md w-full space-y-8`)}>
@@ -166,7 +156,7 @@ const CalculatorForm = () => {
                   component="fieldset"
                   variant="standard"
                   sx={{
-                    width: '100%',
+                    width: `100%`,
                   }}
                 >
                   <FormGroup>
@@ -175,16 +165,13 @@ const CalculatorForm = () => {
                     </Divider>
                     <Grid container alignItems="center">
                       <Grid item xs={8}>
-                        <FormControlLabel
-                          control={<Switch checked={state.isPereplan} onChange={handleChange} name="isPereplan" />}
-                          label={`Перепланировка`}
-                        />
+                        <FormControlLabel control={<Switch checked={state.isPereplan} onChange={handleChange} name="isPereplan" />} label="Перепланировка" />
                       </Grid>
                       <Grid item xs={4} textAlign="right">
                         <Typography sx={{ lineHeight: 2.4 }}>
-                          {new Intl.NumberFormat('ru-RU', {
-                            style: 'currency',
-                            currency: 'RUB',
+                          {new Intl.NumberFormat(`ru-RU`, {
+                            style: `currency`,
+                            currency: `RUB`,
                             maximumFractionDigits: 0,
                             minimumFractionDigits: 0,
                           }).format(Number(rangeval) * pereplan)}
@@ -193,16 +180,13 @@ const CalculatorForm = () => {
                     </Grid>
                     <Grid container alignItems="center">
                       <Grid item xs={8}>
-                        <FormControlLabel
-                          control={<Switch checked={state.isStajka} onChange={handleChange} name="isStajka" />}
-                          label={`Стажка полов`}
-                        />
+                        <FormControlLabel control={<Switch checked={state.isStajka} onChange={handleChange} name="isStajka" />} label="Стажка полов" />
                       </Grid>
                       <Grid item xs={4} textAlign="right">
                         <Typography sx={{ lineHeight: 2.4 }}>
-                          {new Intl.NumberFormat('ru-RU', {
-                            style: 'currency',
-                            currency: 'RUB',
+                          {new Intl.NumberFormat(`ru-RU`, {
+                            style: `currency`,
+                            currency: `RUB`,
                             maximumFractionDigits: 0,
                             minimumFractionDigits: 0,
                           }).format(Number(rangeval) * stajkaPola)}
@@ -211,16 +195,13 @@ const CalculatorForm = () => {
                     </Grid>
                     <Grid container alignItems="center">
                       <Grid item xs={8}>
-                        <FormControlLabel
-                          control={<Switch checked={state.isTeplPol} onChange={handleChange} name="isTeplPol" />}
-                          label={`Теплый пол (3 контура)`}
-                        />
+                        <FormControlLabel control={<Switch checked={state.isTeplPol} onChange={handleChange} name="isTeplPol" />} label="Теплый пол (3 контура)" />
                       </Grid>
                       <Grid item xs={4} textAlign="right">
                         <Typography sx={{ lineHeight: 2.4 }}>
-                          {new Intl.NumberFormat('ru-RU', {
-                            style: 'currency',
-                            currency: 'RUB',
+                          {new Intl.NumberFormat(`ru-RU`, {
+                            style: `currency`,
+                            currency: `RUB`,
                             maximumFractionDigits: 0,
                             minimumFractionDigits: 0,
                           }).format(konturTeplPol * 3)}
@@ -229,18 +210,13 @@ const CalculatorForm = () => {
                     </Grid>
                     <Grid container alignItems="center">
                       <Grid item xs={8}>
-                        <FormControlLabel
-                          control={
-                            <Switch checked={state.isElectroMontaj} onChange={handleChange} name="isElectroMontaj" />
-                          }
-                          label={`Электромонтаж`}
-                        />
+                        <FormControlLabel control={<Switch checked={state.isElectroMontaj} onChange={handleChange} name="isElectroMontaj" />} label="Электромонтаж" />
                       </Grid>
                       <Grid item xs={4} textAlign="right">
                         <Typography sx={{ lineHeight: 2.4 }}>
-                          {new Intl.NumberFormat('ru-RU', {
-                            style: 'currency',
-                            currency: 'RUB',
+                          {new Intl.NumberFormat(`ru-RU`, {
+                            style: `currency`,
+                            currency: `RUB`,
                             maximumFractionDigits: 0,
                             minimumFractionDigits: 0,
                           }).format(Number(rangeval) * electroMontaj)}
@@ -249,22 +225,13 @@ const CalculatorForm = () => {
                     </Grid>
                     <Grid container alignItems="center">
                       <Grid item xs={8}>
-                        <FormControlLabel
-                          control={
-                            <Switch
-                              checked={state.isUstanovkaElectroPrib}
-                              onChange={handleChange}
-                              name="isUstanovkaElectroPrib"
-                            />
-                          }
-                          label={`Установка электроприборов`}
-                        />
+                        <FormControlLabel control={<Switch checked={state.isUstanovkaElectroPrib} onChange={handleChange} name="isUstanovkaElectroPrib" />} label="Установка электроприборов" />
                       </Grid>
                       <Grid item xs={4} textAlign="right">
                         <Typography sx={{ lineHeight: 2.4 }}>
-                          {new Intl.NumberFormat('ru-RU', {
-                            style: 'currency',
-                            currency: 'RUB',
+                          {new Intl.NumberFormat(`ru-RU`, {
+                            style: `currency`,
+                            currency: `RUB`,
                             maximumFractionDigits: 0,
                             minimumFractionDigits: 0,
                           }).format(ustanovkaElectroPrib)}
@@ -276,25 +243,20 @@ const CalculatorForm = () => {
                 <FormControl
                   component="fieldset"
                   sx={{
-                    width: '100%',
+                    width: `100%`,
                   }}
                 >
                   <FormLabel component="legend">Тип потолка</FormLabel>
-                  <RadioGroup
-                    aria-label="Тип потолки"
-                    name="controlled-radio-buttons-group"
-                    value={tipPotolka}
-                    onChange={handleChangeTipPotolka}
-                  >
+                  <RadioGroup aria-label="Тип потолки" name="controlled-radio-buttons-group" value={tipPotolka} onChange={handleChangeTipPotolka}>
                     <Grid container alignItems="center">
                       <Grid item xs={8}>
-                        <FormControlLabel value="natajnoy" control={<Radio />} label={`Натяжной`} />
+                        <FormControlLabel value="natajnoy" control={<Radio />} label="Натяжной" />
                       </Grid>
                       <Grid item xs={4} textAlign="right">
                         <Typography sx={{ lineHeight: 2.4 }}>
-                          {new Intl.NumberFormat('ru-RU', {
-                            style: 'currency',
-                            currency: 'RUB',
+                          {new Intl.NumberFormat(`ru-RU`, {
+                            style: `currency`,
+                            currency: `RUB`,
                             maximumFractionDigits: 0,
                             minimumFractionDigits: 0,
                           }).format(Number(rangeval) * potolkiNatajn)}
@@ -303,13 +265,13 @@ const CalculatorForm = () => {
                     </Grid>
                     <Grid container alignItems="center">
                       <Grid item xs={8}>
-                        <FormControlLabel value="kombinir" control={<Radio />} label={`Комбинированный`} />
+                        <FormControlLabel value="kombinir" control={<Radio />} label="Комбинированный" />
                       </Grid>
                       <Grid item xs={4} textAlign="right">
                         <Typography sx={{ lineHeight: 2.4 }}>
-                          {new Intl.NumberFormat('ru-RU', {
-                            style: 'currency',
-                            currency: 'RUB',
+                          {new Intl.NumberFormat(`ru-RU`, {
+                            style: `currency`,
+                            currency: `RUB`,
                             maximumFractionDigits: 0,
                             minimumFractionDigits: 0,
                           }).format(Number(rangeval) * potolkiKombin)}
@@ -327,9 +289,9 @@ const CalculatorForm = () => {
                   </Grid>
                   <Grid item xs={4} textAlign="right">
                     <Typography>
-                      {new Intl.NumberFormat('ru-RU', {
-                        style: 'currency',
-                        currency: 'RUB',
+                      {new Intl.NumberFormat(`ru-RU`, {
+                        style: `currency`,
+                        currency: `RUB`,
                         maximumFractionDigits: 0,
                         minimumFractionDigits: 0,
                       }).format(monajSanteh)}
@@ -342,9 +304,9 @@ const CalculatorForm = () => {
                   </Grid>
                   <Grid item xs={4} textAlign="right">
                     <Typography>
-                      {new Intl.NumberFormat('ru-RU', {
-                        style: 'currency',
-                        currency: 'RUB',
+                      {new Intl.NumberFormat(`ru-RU`, {
+                        style: `currency`,
+                        currency: `RUB`,
                         maximumFractionDigits: 0,
                         minimumFractionDigits: 0,
                       }).format(ustanovkaSanteh)}
@@ -357,9 +319,9 @@ const CalculatorForm = () => {
                   </Grid>
                   <Grid item xs={4} textAlign="right">
                     <Typography>
-                      {new Intl.NumberFormat('ru-RU', {
-                        style: 'currency',
-                        currency: 'RUB',
+                      {new Intl.NumberFormat(`ru-RU`, {
+                        style: `currency`,
+                        currency: `RUB`,
                         maximumFractionDigits: 0,
                         minimumFractionDigits: 0,
                       }).format(sistemaVentil)}
@@ -372,9 +334,9 @@ const CalculatorForm = () => {
                   </Grid>
                   <Grid item xs={4} textAlign="right">
                     <Typography>
-                      {new Intl.NumberFormat('ru-RU', {
-                        style: 'currency',
-                        currency: 'RUB',
+                      {new Intl.NumberFormat(`ru-RU`, {
+                        style: `currency`,
+                        currency: `RUB`,
                         maximumFractionDigits: 0,
                         minimumFractionDigits: 0,
                       }).format(gidroMaterial)}
@@ -386,16 +348,11 @@ const CalculatorForm = () => {
                     <Typography>Малярный и расходный материал</Typography>
                   </Grid>
                   <Grid item xs={4} textAlign="right">
-                    <Tooltip
-                      title="В эту сумму включены все черновые, малярные и расходные материалы, кроме тех, которые заказчик выбирает на свой вкус (обои и др.)"
-                      placement="top-end"
-                      enterTouchDelay={50}
-                      arrow
-                    >
+                    <Tooltip title="В эту сумму включены все черновые, малярные и расходные материалы, кроме тех, которые заказчик выбирает на свой вкус (обои и др.)" placement="top-end" enterTouchDelay={50} arrow>
                       <Typography>
-                        {new Intl.NumberFormat('ru-RU', {
-                          style: 'currency',
-                          currency: 'RUB',
+                        {new Intl.NumberFormat(`ru-RU`, {
+                          style: `currency`,
+                          currency: `RUB`,
                           maximumFractionDigits: 0,
                           minimumFractionDigits: 0,
                         }).format(Number(rangeval) * malarka)}
@@ -408,16 +365,11 @@ const CalculatorForm = () => {
                     <Typography>Доставка и подъем материалов</Typography>
                   </Grid>
                   <Grid item xs={4} textAlign="right">
-                    <Tooltip
-                      title="Разгрузка, подъем отделочных материалов, вынос и вывоз строительного мусора, и уборка после ремонта под сдачу квартиры"
-                      placement="top-end"
-                      enterTouchDelay={50}
-                      arrow
-                    >
+                    <Tooltip title="Разгрузка, подъем отделочных материалов, вынос и вывоз строительного мусора, и уборка после ремонта под сдачу квартиры" placement="top-end" enterTouchDelay={50} arrow>
                       <Typography>
-                        {new Intl.NumberFormat('ru-RU', {
-                          style: 'currency',
-                          currency: 'RUB',
+                        {new Intl.NumberFormat(`ru-RU`, {
+                          style: `currency`,
+                          currency: `RUB`,
                           maximumFractionDigits: 0,
                           minimumFractionDigits: 0,
                         }).format(deliveryMater)}
@@ -432,9 +384,9 @@ const CalculatorForm = () => {
                   </Grid>
                   <Grid item xs={4} textAlign="right">
                     <Typography>
-                      {new Intl.NumberFormat('ru-RU', {
-                        style: 'currency',
-                        currency: 'RUB',
+                      {new Intl.NumberFormat(`ru-RU`, {
+                        style: `currency`,
+                        currency: `RUB`,
                         maximumFractionDigits: 0,
                         minimumFractionDigits: 0,
                       }).format(Number(rangeval) * rabota)}
@@ -447,9 +399,9 @@ const CalculatorForm = () => {
                   </Grid>
                   <Grid item xs={4} textAlign="right">
                     <Typography>
-                      {new Intl.NumberFormat('ru-RU', {
-                        style: 'currency',
-                        currency: 'RUB',
+                      {new Intl.NumberFormat(`ru-RU`, {
+                        style: `currency`,
+                        currency: `RUB`,
                         maximumFractionDigits: 0,
                         minimumFractionDigits: 0,
                       }).format(Number(rangeval) * prorab)}
@@ -466,17 +418,12 @@ const CalculatorForm = () => {
                     </Typography>
                   </Grid>
                   <Grid item xs={4} textAlign="right">
-                    <Tooltip
-                      title="В эту сумму входят все отмеченные работы под ключ, включая расходные и отделочные материалы"
-                      placement="top-end"
-                      enterTouchDelay={50}
-                      arrow
-                    >
+                    <Tooltip title="В эту сумму входят все отмеченные работы под ключ, включая расходные и отделочные материалы" placement="top-end" enterTouchDelay={50} arrow>
                       <Typography variant="h6" color="primary">
                         <b>
-                          {new Intl.NumberFormat('ru-RU', {
-                            style: 'currency',
-                            currency: 'RUB',
+                          {new Intl.NumberFormat(`ru-RU`, {
+                            style: `currency`,
+                            currency: `RUB`,
                             maximumFractionDigits: 0,
                             minimumFractionDigits: 0,
                           }).format(raschet())}
@@ -487,14 +434,14 @@ const CalculatorForm = () => {
                 </Grid>
                 <Alert severity="info">
                   Точная цена может варьироваться от&nbsp;
-                  {`${new Intl.NumberFormat('ru-RU', {
-                    style: 'currency',
-                    currency: 'RUB',
+                  {`${new Intl.NumberFormat(`ru-RU`, {
+                    style: `currency`,
+                    currency: `RUB`,
                     maximumFractionDigits: 0,
                     minimumFractionDigits: 0,
-                  }).format(itogo - 40000)}\u00a0до\u00a0${new Intl.NumberFormat('ru-RU', {
-                    style: 'currency',
-                    currency: 'RUB',
+                  }).format(itogo - 40000)}\u00a0до\u00a0${new Intl.NumberFormat(`ru-RU`, {
+                    style: `currency`,
+                    currency: `RUB`,
                     maximumFractionDigits: 0,
                     minimumFractionDigits: 0,
                   }).format(itogo + 40000)}`}
@@ -520,8 +467,8 @@ const CalculatorForm = () => {
                       }}
                       required
                       className={tw(
-                        `appearance-none rounded-none relative block w-full px-3 py-2 border 
-                      border-gray-300 placeholder-gray-500 text-gray-900 rounded-t-md focus:outline-none 
+                        `appearance-none rounded-none relative block w-full px-3 py-2 border
+                      border-gray-300 placeholder-gray-500 text-gray-900 rounded-t-md focus:outline-none
                       focus:ring-yellow-500 focus:border-yellow-500 focus:z-10 sm:text-sm`,
                       )}
                       placeholder="Ваше имя"
@@ -542,8 +489,8 @@ const CalculatorForm = () => {
                       required
                       placeholder="Номер телефона"
                       className={tw(
-                        `appearance-none rounded-none relative block w-full px-3 py-2 border 
-                      border-gray-300 placeholder-gray-500 text-gray-900 rounded-b-md 
+                        `appearance-none rounded-none relative block w-full px-3 py-2 border
+                      border-gray-300 placeholder-gray-500 text-gray-900 rounded-b-md
                       focus:outline-none focus:ring-yellow-500 focus:border-yellow-500 focus:z-10 sm:text-sm my-6`,
                       )}
                     />
@@ -553,14 +500,8 @@ const CalculatorForm = () => {
                 <div>
                   <ButtonSubmitZamer>{buttonText}</ButtonSubmitZamer>
                 </div>
-                {showSuccessMessage && (
-                  <p className={tw(`text-green-500 font-semibold text-sm my-2`)}>
-                    Спасибо! Мы уже получили вашу заявку и скоро вам позвоним.
-                  </p>
-                )}
-                {showFailureMessage && (
-                  <p className={tw(`text-red-500`)}>Ой! Что то пошло не так, попробуйте еще раз.</p>
-                )}
+                {showSuccessMessage && <p className={tw(`text-green-500 font-semibold text-sm my-2`)}>Спасибо! Мы уже получили вашу заявку и скоро вам позвоним.</p>}
+                {showFailureMessage && <p className={tw(`text-red-500`)}>Ой! Что то пошло не так, попробуйте еще раз.</p>}
               </div>
             </form>
           </div>

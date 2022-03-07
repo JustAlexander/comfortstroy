@@ -4,7 +4,12 @@
     "noImplicitThis": true,
     "strictNullChecks": true,
     "target": "es2015",
-    "lib": ["es6", "dom", "dom.iterable", "esnext"],
+    "lib": [
+      "es6",
+      "dom",
+      "dom.iterable",
+      "esnext"
+    ],
     "allowJs": true,
     "skipLibCheck": true,
     "strict": true,
@@ -18,10 +23,19 @@
     "jsx": "preserve",
     "baseUrl": "./src",
     "paths": {
-      "@/*": ["./*"]
-    }
+      "@/*": [
+        "./*"
+      ]
+    },
+    "incremental": true
   },
-  "exclude": ["node_modules"],
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],
+  "exclude": [
+    "node_modules"
+  ],
+  "include": [
+    "next-env.d.ts",
+    "**/*.ts",
+    "**/*.tsx"
+  ],
   "noImplicitAny": false
 }

@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/click-events-have-key-events, jsx-a11y/no-noninteractive-element-interactions */
 import { tw } from 'twind';
 
 import 'photoswipe/dist/photoswipe.css';
@@ -381,9 +382,7 @@ const GalleryProjets = () => (
     <div className={tw(`max-w-7xl mx-auto p-4 sm:p-6 lg:p-8 bg-white`)}>
       <div className={tw(`mb-16 text-center`)}>
         <p className={tw(`text-base text-yellow-600 font-semibold tracking-wide uppercase`)}>Наши проекты</p>
-        <h1 className={tw(`mt-2 pb-4 text-4xl lg:text-7xl font-bold tracking-tight text-gray-900`)}>
-          Фото ремонта квартир
-        </h1>
+        <h1 className={tw(`mt-2 pb-4 text-4xl lg:text-7xl font-bold tracking-tight text-gray-900`)}>Фото ремонта квартир</h1>
       </div>
       <div className={tw(`flex flex-wrap -mx-8 items-center`)}>
         <div className={tw(`w-full flex flex-wrap justify-around`)}>
@@ -396,21 +395,8 @@ const GalleryProjets = () => (
                       xl:max-w-sm lg:w-1/2 w-11/12 mx-auto sm:mx-0 cursor-pointer hover:scale-105`,
                 )}
               >
-                <Item
-                  original={article.imagebig}
-                  thumbnail={article.image}
-                  width={article.width}
-                  height={article.height}
-                >
-                  {({ ref, open }) => (
-                    <img
-                      ref={ref as React.RefObject<HTMLImageElement>}
-                      alt={article.alt}
-                      onClick={open}
-                      src={article.image}
-                      className={tw(`h-full w-full object-cover overflow-hidden rounded`)}
-                    />
-                  )}
+                <Item original={article.imagebig} thumbnail={article.image} width={article.width} height={article.height}>
+                  {({ ref, open }) => <img ref={ref as React.RefObject<HTMLImageElement>} alt={article.alt} onClick={open} src={article.image} className={tw(`h-full w-full object-cover overflow-hidden rounded`)} />}
                 </Item>
               </div>
             ))}

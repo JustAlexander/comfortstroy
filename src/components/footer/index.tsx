@@ -4,6 +4,7 @@ import { useState } from 'react';
 import PhoneInput, { isValidPhoneNumber } from 'react-phone-number-input/input';
 import { E164Number } from 'libphonenumber-js/types';
 import NextLink from 'next/link';
+import Image from 'next/image';
 
 const productLinks = [
   {
@@ -116,7 +117,7 @@ const Footer = () => {
         <div className={tw(`mb-14 flex items-center w-full`)}>
           <NextLink href="/" passHref>
             <a>
-              <img className={tw(`h-12 w-52`)} src="logo.svg" alt="logo" width={48} height={48} />
+              <Image className={tw(`h-12 w-52`)} src="/logo.svg" alt="logo" width={208} height={48} />
             </a>
           </NextLink>
         </div>
@@ -171,28 +172,14 @@ const Footer = () => {
             <div className={tw(`border border-gray-400 rounded py-5 px-4`)}>
               <h4 className={tw(`font-mono text-sm uppercase text-gray-500 mb-3`)}>Обратный звонок</h4>
               <div className={tw(`flex w-full`)}>
-                <PhoneInput
-                  defaultCountry="RU"
-                  aria-label="Номер телефона"
-                  value={phone}
-                  onChange={setPhone}
-                  name="phone"
-                  placeholder="Номер телефона"
-                  className={tw(
-                    `border border-gray-300 bg-gray-100 min-w-0 w-full rounded text-gray-800 py-2 px-3 mr-2 text-sm`,
-                  )}
-                />
+                <PhoneInput defaultCountry="RU" aria-label="Номер телефона" value={phone} onChange={setPhone} name="phone" placeholder="Номер телефона" className={tw(`border border-gray-300 bg-gray-100 min-w-0 w-full rounded text-gray-800 py-2 px-3 mr-2 text-sm`)} />
                 <ButtonSubmit>{buttonText}</ButtonSubmit>
               </div>
               {errors && <p className={tw(`text-red-500 pt-2 text-sm`)}>Телефонный номер введен не верно</p>}
             </div>
           </div>
           <div className="text-left">
-            {showSuccessMessage && (
-              <p className={tw(`text-green-500 font-semibold text-sm my-2`)}>
-                Спасибо! Мы уже получили вашу заявку и скоро вам позвоним.
-              </p>
-            )}
+            {showSuccessMessage && <p className={tw(`text-green-500 font-semibold text-sm my-2`)}>Спасибо! Мы уже получили вашу заявку и скоро вам позвоним.</p>}
             {showFailureMessage && <p className={tw(`text-red-500`)}>Ой! Что то пошло не так, попробуйте еще раз.</p>}
           </div>
         </form>
