@@ -8,6 +8,7 @@ const ParticleBg = () => (
   <Particles
     id="tsparticles"
     options={{
+      fullScreen: false,
       fpsLimit: 120,
       interactivity: {
         events: {
@@ -15,66 +16,34 @@ const ParticleBg = () => (
             enable: true,
             mode: `push`,
           },
-          onHover: {
-            enable: true,
-            mode: `repulse`,
-          },
-          resize: true,
-        },
-        modes: {
-          bubble: {
-            distance: 400,
-            duration: 2,
-            opacity: 0.8,
-            size: 40,
-          },
-          push: {
-            quantity: 4,
-          },
-          repulse: {
-            distance: 200,
-            duration: 0.4,
-          },
         },
       },
       particles: {
-        color: {
-          value: `#ffffff`,
-        },
         links: {
-          color: `#ffffff`,
-          distance: 150,
-          enable: true,
-          opacity: 0.5,
-          width: 1,
-        },
-        collisions: {
-          enable: true,
+          enable: false,
         },
         move: {
-          direction: `none`,
+          direction: `right`,
           enable: true,
-          outMode: `bounce`,
-          random: false,
-          speed: 6,
-          straight: false,
+          speed: 0.3,
         },
         number: {
           density: {
             enable: true,
-            area: 800,
+            area: 3000,
           },
-          value: 80,
+          value: 400,
         },
         opacity: {
-          value: 0.5,
-        },
-        shape: {
-          type: `circle`,
+          anim: {
+            enable: true,
+            speed: 0.5,
+            opacity_min: 0.1,
+          },
         },
         size: {
           random: true,
-          value: 5,
+          value: 1,
         },
       },
       detectRetina: true,
