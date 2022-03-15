@@ -9,6 +9,7 @@ import PricingTable from '@/components/pricing-table';
 import Footer from '@/components/footer';
 import useInView from 'react-cool-inview';
 import dynamic from 'next/dynamic';
+import Discount from '@/components/discount';
 const CasesSection = dynamic(() => import('@/components/cases-section'));
 
 export default function Home() {
@@ -22,6 +23,7 @@ export default function Home() {
       <main>
         <VideoSection />
         <ListSection />
+        <Discount />
         <div ref={observe}>
           <FeatureSection />
         </div>

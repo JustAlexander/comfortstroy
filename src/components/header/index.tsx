@@ -22,7 +22,7 @@ const Header = () => (
         <div className={tw(`w-full sm:(w-1/3 text-right)`)}>
           <NextLink href="/zamer" passHref>
             <a>
-              <Button primary>Вызвать замерщика</Button>
+              <Button>Вызвать замерщика</Button>
             </a>
           </NextLink>
         </div>
@@ -32,7 +32,7 @@ const Header = () => (
         <div className={tw(`w-full sm:(w-1/3 text-left)`)}>
           <NextLink href="/calculator" passHref>
             <a>
-              <Button>Онлайн-калькулятор</Button>
+              <Button primary>Онлайн-калькулятор</Button>
             </a>
           </NextLink>
         </div>
