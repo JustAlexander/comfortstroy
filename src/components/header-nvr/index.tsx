@@ -1,9 +1,9 @@
 import { tw, css } from 'twind/css';
 import Button from '@/components/button';
-import Real from '@/constants/svg/real.svg';
-import Izumrud from '@/constants/svg/izum.svg';
-import Lazur from '@/constants/svg/lazur.svg';
-import Acvarel from '@/constants/svg/acvarel.svg';
+import Classica from '@/constants/svg/classica.svg';
+import Clouds from '@/constants/svg/clouds.svg';
+import Comfy from '@/constants/svg/comfy.svg';
+import Avrora from '@/constants/svg/avrora.svg';
 import NextLink from 'next/link';
 
 const headerStyle = css`
@@ -43,10 +43,10 @@ const Header = () => (
         <p className={tw(`font-mono uppercase text-center font-medium text-sm text-gray-600`)}>Работаем официально</p>
         <p className={tw(`font-mono uppercase text-center font-medium text-sm text-gray-600`)}>На ЖК</p>
         <div className={tw(`flex items-center justify-center mx-auto flex-wrap`)}>
-          <Acvarel className={tw(`m-12 mb-8`)} width={120} />
-          <Real className={tw(`m-12`)} width={140} />
-          <Izumrud className={tw(`m-12`)} width={140} />
-          <Lazur className={tw(`m-12`)} width={140} />
+          <Avrora className={tw(`m-12`)} width={160} />
+          <Classica className={tw(`m-12`)} width={190} />
+          <Clouds className={tw(`m-12`)} width={160} />
+          <Comfy className={tw(`m-12 mt-10`)} width={170} />
         </div>
       </div>
     </div>
