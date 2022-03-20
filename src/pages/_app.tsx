@@ -1,4 +1,6 @@
 import { AppProps } from 'next/app';
+import Router from 'next/router';
+import withYM from 'next-ym';
 import '@/styles/global.css';
 import '@fontsource/inter';
 import 'react-modal-video/css/modal-video.min.css';
@@ -23,3 +25,4 @@ function MyApp({ Component, pageProps }: AppProps) {
 }
 
 export default withTwindApp(twindConfig, MyApp);
+export const ym = withYM('87907757', Router)(MyApp);

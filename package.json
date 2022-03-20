@@ -40,6 +40,7 @@
     "libphonenumber-js": "1.9.49",
     "next": "12",
     "next-seo": "5.1.0",
+    "next-ym": "2.3.5",
     "photoswipe": "4.1.3",
     "react": "17.0.2",
     "react-cool-inview": "2.0.9",
