@@ -24,5 +24,5 @@ function MyApp({ Component, pageProps }: AppProps) {
   );
 }
 
-export default withTwindApp(twindConfig, MyApp);
-export const ym = withYM('87907757', Router)(MyApp);
+const firstHOC = withYM('87907757', Router)(MyApp);
+export default withTwindApp(twindConfig, firstHOC);
