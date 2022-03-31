@@ -9,14 +9,20 @@ import twindConfig from '../twind.config';
 function MyApp({ Component, pageProps }: AppProps) {
   return (
     <>
-      <Script id="google-analytics" strategy="afterInteractive">
-        {`
-            window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
-            ga('create', '${process.env.NEXT_PUBLIC_GA_ID}', 'auto');
-            ga('send', 'pageview');
-        `}
-      </Script>
-      <Script src="https://www.google-analytics.com/analytics.js" strategy="afterInteractive" />
+      <script
+        dangerouslySetInnerHTML={{
+          __html: `(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+                new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+                j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+                'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+                })(window,document,'script','dataLayer','GTM-TLKJPMD');`,
+        }}
+      />
+      <noscript
+        dangerouslySetInnerHTML={{
+          __html: `<iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TLKJPMD" height="0" width="0" style="display:none;visibility:hidden"></iframe>`,
+        }}
+      />
       <Component {...pageProps} />;
     </>
   );
