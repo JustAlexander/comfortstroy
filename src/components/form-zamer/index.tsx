@@ -126,7 +126,11 @@ const FormZamer = () => {
               <div>
                 <ButtonSubmitZamer>{buttonText}</ButtonSubmitZamer>
               </div>
-              {showSuccessMessage && <p className={tw(`text-green-500 font-semibold text-sm my-2`)}>Спасибо! Мы уже получили вашу заявку и скоро вам позвоним.</p>}
+              {showSuccessMessage && (
+                <p id="zamerSendOk" className={tw(`text-green-500 font-semibold text-sm my-2`)}>
+                  Спасибо! Мы уже получили вашу заявку и скоро вам позвоним.
+                </p>
+              )}
               {showFailureMessage && <p className={tw(`text-red-500`)}>Ой! Что то пошло не так, попробуйте еще раз.</p>}
             </form>
           </div>
