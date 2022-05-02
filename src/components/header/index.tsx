@@ -43,10 +43,10 @@ const Header = () => (
         <p className={tw(`font-mono uppercase text-center font-medium text-sm text-gray-600`)}>Работаем на всех ЖК</p>
         <p className={tw(`font-mono uppercase text-center font-medium text-sm text-gray-600`)}>Включая</p>
         <div className={tw(`flex items-center justify-center mx-auto flex-wrap`)}>
-          <Acvarel className={tw(`m-12 mb-8`)} width={120} />
+          <Acvarel className={tw(`m-12`)} width={280} />
           <Real className={tw(`m-12`)} width={140} />
           <Izumrud className={tw(`m-12`)} width={140} />
-          <Lazur className={tw(`m-12`)} width={140} />
+          <Lazur className={tw(`m-12`)} width={280} />
         </div>
       </div>
     </div>

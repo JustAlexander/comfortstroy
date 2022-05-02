@@ -1,6 +1,6 @@
 import { tw, css } from 'twind/css';
 import Button from '@/components/button';
-import Classica from '@/constants/svg/classica.svg';
+import Regata from '@/constants/svg/regata.svg';
 import Clouds from '@/constants/svg/clouds.svg';
 import Comfy from '@/constants/svg/comfy.svg';
 import Avrora from '@/constants/svg/avrora.svg';
@@ -44,7 +44,7 @@ const Header = () => (
         <p className={tw(`font-mono uppercase text-center font-medium text-sm text-gray-600`)}>На ЖК</p>
         <div className={tw(`flex items-center justify-center mx-auto flex-wrap`)}>
           <Avrora className={tw(`m-12`)} width={160} />
-          <Classica className={tw(`m-12`)} width={190} />
+          <Regata className={tw(`m-12`)} width={150} />
           <Clouds className={tw(`m-12`)} width={160} />
           <Comfy className={tw(`m-12 mt-10`)} width={170} />
         </div>
