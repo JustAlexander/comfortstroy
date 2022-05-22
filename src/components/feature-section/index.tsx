@@ -3,8 +3,8 @@ import Check from '@/constants/svg/check.svg';
 
 const FeatureSection = () => (
   <section id="features" className={tw(`bg-white pb-6`)}>
-    <div className={tw(`max-w-7xl mx-auto p-4 sm:p-6 lg:p-8`)}>
-      <div className={tw(`container mx-auto px-6 p-6 bg-white`)}>
+    <div className={tw(`max-w-7xl mx-auto py-4 px-6 sm:p-6 lg:p-8`)}>
+      <div className={tw(`container mx-auto bg-white`)}>
         <div className={tw(`mb-16 text-center`)}>
           <h4 className={tw(`text-base text-yellow-600 font-semibold tracking-wide uppercase`)}>Особенности</h4>
           <p className={tw(`mt-2 text-5xl lg:text-7xl font-bold tracking-tight text-gray-900`)}>Подход к работе</p>

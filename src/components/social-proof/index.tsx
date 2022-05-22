@@ -2,6 +2,7 @@ import { tw } from 'twind';
 import { useState } from 'react';
 import Quote from '@/constants/svg/quote.svg';
 import Image from 'next/image';
+import Button from '@/components/button';
 
 const socialProofs = [
   {
@@ -73,38 +74,56 @@ const SocialProof = () => {
   };
 
   return (
-    <div className={tw(`container mx-auto my-8`)}>
+    <div className={tw(`container mx-auto mt-28`)}>
       <div className={tw(`max-w-7xl mx-auto`)}>
+        <div className={tw(`mb-16 text-center`)}>
+          <p className={tw(`text-base pb-2 text-yellow-600 font-semibold tracking-wide uppercase`)}>Отзывы</p>
+          <h2 className={tw(`mt-2 pb-4 text-5xl lg:text-7xl font-bold tracking-tight text-gray-900`)}>Мнения наших клиентов</h2>
+        </div>
         <section>
-          <figure>
-            <div className={tw(`relative bg-white`)}>
-              <Quote className={tw(`w-16 md:w-12 left-0 md:-left-2 absolute top-0 pl-4 md:pl-0 text-gray-300`)} />
-              <div className={tw(`pt-20 px-6 md:px-0`)}>
-                <p className={tw(`text-gray-600 text-base pb-6`)}>{socialProofs[currentIndex].text}</p>
-                <div className={tw(`flex items-center justify-between`)}>
-                  <div className={tw(`flex items-center pb-12`)}>
-                    <div className={tw(`h-12 w-12`)}>
-                      <Image src={socialProofs[currentIndex].image} alt={socialProofs[currentIndex].name} className={tw(`h-full w-full object-cover overflow-hidden rounded-full`)} height={48} width={48} />
+          <div className={tw(`flex flex-wrap items-center`)}>
+            <div className={tw(`w-full lg:w-1/2 px-6 md:px-0 sm:p-6 lg:p-8`)}>
+              <figure>
+                <div className={tw(`relative bg-white`)}>
+                  <Quote className={tw(`w-16 md:w-12 left-0 md:-left-2 absolute top-0 pl-4 md:pl-0 text-gray-300`)} />
+                  <div className={tw(`pt-20 px-0 md:px-0`)}>
+                    <p className={tw(`text-gray-600 text-base pb-6`)}>{socialProofs[currentIndex].text}</p>
+                    <div className={tw(`flex items-center justify-between`)}>
+                      <div className={tw(`flex items-center pb-12`)}>
+                        <div className={tw(`h-12 w-12`)}>
+                          <Image src={socialProofs[currentIndex].image} alt={socialProofs[currentIndex].name} className={tw(`h-full w-full object-cover overflow-hidden rounded-full`)} height={48} width={48} />
+                        </div>
+                        <p className={tw(`text-gray-600 font-bold ml-3`)}>
+                          {socialProofs[currentIndex].name} <br />
+                          <span className={tw(`text-gray-600 text-base font-light`)}>{socialProofs[currentIndex].company}</span>
+                        </p>
+                      </div>
+                      <div className={tw(`cursor-pointer flex pb-12`)}>
+                        <svg xmlns="http://www.w3.org/2000/svg" width={44} height={44} viewBox="0 0 24 24" strokeWidth="1.5" stroke="#CBD5E0" fill="none" strokeLinecap="round" strokeLinejoin="round" onClick={previous}>
+                          <path stroke="none" d="M0 0h24v24H0z" />
+                          <polyline points="15 6 9 12 15 18" />
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width={44} height={44} viewBox="0 0 24 24" strokeWidth="1.5" stroke="#CBD5E0" fill="none" strokeLinecap="round" strokeLinejoin="round" onClick={next}>
+                          <path stroke="none" d="M0 0h24v24H0z" />
+                          <polyline points="9 6 15 12 9 18" />
+                        </svg>
+                      </div>
                     </div>
-                    <p className={tw(`text-gray-600 font-bold ml-3`)}>
-                      {socialProofs[currentIndex].name} <br />
-                      <span className={tw(`text-gray-600 text-base font-light`)}>{socialProofs[currentIndex].company}</span>
-                    </p>
-                  </div>
-                  <div className={tw(`cursor-pointer flex pb-12`)}>
-                    <svg xmlns="http://www.w3.org/2000/svg" width={44} height={44} viewBox="0 0 24 24" strokeWidth="1.5" stroke="#CBD5E0" fill="none" strokeLinecap="round" strokeLinejoin="round" onClick={previous}>
-                      <path stroke="none" d="M0 0h24v24H0z" />
-                      <polyline points="15 6 9 12 15 18" />
-                    </svg>
-                    <svg xmlns="http://www.w3.org/2000/svg" width={44} height={44} viewBox="0 0 24 24" strokeWidth="1.5" stroke="#CBD5E0" fill="none" strokeLinecap="round" strokeLinejoin="round" onClick={next}>
-                      <path stroke="none" d="M0 0h24v24H0z" />
-                      <polyline points="9 6 15 12 9 18" />
-                    </svg>
                   </div>
                 </div>
+              </figure>
+              <div className={tw(`text-center`)}>
+                <a href="https://search.google.com/local/reviews?placeid=ChIJEQVINeWK8UARhLtvDFD3ZAU" target="_blank" rel="noopener noreferrer" className={tw(`object-none object-center`)}>
+                  <Button primary modifier="mt-1">
+                    Все отзывы
+                  </Button>
+                </a>
               </div>
             </div>
-          </figure>
+            <div className={tw(`w-full lg:w-1/2 px-2 pt-14`)}>
+              <Image width="100%" height="100%" src="/images/otzyvy.avif" layout="responsive" alt="Ремонт однокомнатной квартир в Геленджик под ключ" />
+            </div>
+          </div>
         </section>
       </div>
     </div>

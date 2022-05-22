@@ -7,11 +7,11 @@ const features = [`Разводка и монтаж сантех. узлов`, `
 
 const PricingTable = () => (
   <section id="price" className={tw(`bg-gradient-to-b from-gray-100 to-white shadow-inner pt-12`)}>
-    <div className={tw(`relative max-w-7xl mx-auto mb-24`)}>
+    <div className={tw(`relative max-w-7xl mx-auto mb-24 sm:p-6 lg:p-8`)}>
       <div className={tw(`overflow-hidden lg:max-w-none lg:flex`)}>
         <div className={tw(`py-8 px-6 md:px-0 lg:flex-shrink-1`)}>
           <h2 className={tw(`text-4xl lg:text-7xl font-bold text-gray-800 mb-12`)}>Цена на ремонт квартиры в Геленджике</h2>
-          <p className={tw(`mt-6 text-base leading-6 text-gray-500`)}>Средняя цена ремонта квартиры в Геленджике от нашей компании Комфорт Строй Про, составляет 5500 руб. за квадратный метр. Ниже представлен полный перечень работ и стоимость. Обратите внимание, что здесь указана цена ремонта квартиры в Геленджике без учёта материалов.</p>
+          <p className={tw(`text-gray-500 leading-loose pb-2`)}>Средняя цена ремонта квартиры в Геленджике от нашей компании Комфорт Строй Про, составляет 5500 руб. за квадратный метр. Ниже представлен полный перечень работ и стоимость. Обратите внимание, что здесь указана цена ремонта квартиры в Геленджике без учёта материалов.</p>
           <div className={tw(`mt-8`)}>
             <div className={tw(`flex items-center`)}>
               <h3

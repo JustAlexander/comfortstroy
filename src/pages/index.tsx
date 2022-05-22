@@ -10,6 +10,10 @@ import Footer from '@/components/footer';
 import useInView from 'react-cool-inview';
 import dynamic from 'next/dynamic';
 import Discount from '@/components/discount';
+import PriceWithMaterials from '@/components/price-with-materials';
+import Smeta from '@/components/smeta';
+import Dogovor from '@/components/dogovor';
+import Sroki from '@/components/sroki';
 const CasesSection = dynamic(() => import('@/components/cases-section'));
 
 export default function Home() {
@@ -30,6 +34,10 @@ export default function Home() {
         {inView && <CasesSection />}
         <SocialProof />
         <PricingTable />
+        <PriceWithMaterials />
+        <Smeta />
+        <Dogovor />
+        <Sroki />
       </main>
       <Footer />
     </Page>

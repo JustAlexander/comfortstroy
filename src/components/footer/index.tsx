@@ -113,7 +113,7 @@ const Footer = () => {
 
   return (
     <footer className={tw(`bg-white border-t border-gray-400 pt-14 pb-16`)}>
-      <div className={tw(`max-w-7xl mx-auto text-gray-400 px-8 lg:px-0 flex flex-wrap`)}>
+      <div className={tw(`max-w-7xl mx-auto text-gray-400 px-6 lg:px-8 flex flex-wrap`)}>
         <div className={tw(`mb-14 flex items-center w-full`)}>
           <NextLink href="/" passHref>
             <a>
