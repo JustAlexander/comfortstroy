@@ -9,6 +9,10 @@ import PricingTableNvr from '@/components/pricing-table-nvr';
 import Footer from '@/components/footer';
 import useInView from 'react-cool-inview';
 import dynamic from 'next/dynamic';
+import PriceWithMaterials from '@/components/price-with-materials-nvr';
+import Smeta from '@/components/smeta';
+import Dogovor from '@/components/dogovor-nvr';
+import Sroki from '@/components/sroki-nvr';
 const CasesSection = dynamic(() => import('@/components/cases-section'));
 
 export default function Nvr() {
@@ -28,6 +32,10 @@ export default function Nvr() {
         {inView && <CasesSection />}
         <SocialProof />
         <PricingTableNvr />
+        <PriceWithMaterials />
+        <Smeta />
+        <Dogovor />
+        <Sroki />
       </main>
       <Footer />
     </Page>

@@ -115,7 +115,7 @@ const SocialProof = () => {
               <div className={tw(`text-center`)}>
                 <a href="https://search.google.com/local/reviews?placeid=ChIJEQVINeWK8UARhLtvDFD3ZAU" target="_blank" rel="noopener noreferrer" className={tw(`object-none object-center`)}>
                   <Button primary modifier="mt-1">
-                    Все отзывы
+                    Все отзывы на Google Картах
                   </Button>
                 </a>
               </div>

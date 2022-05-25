@@ -11,7 +11,7 @@ const ListSection = () => (
         <h2 className={tw(`mt-2 pb-4 text-5xl lg:text-7xl font-bold tracking-tight text-gray-900`)}>Сметы на ремонт квартиры</h2>
       </div>
       <div className={tw(`flex flex-wrap items-center`)}>
-        <p className={tw(`text-gray-500 leading-loose pb-2 mx-auto`)}>Предлагаем ознакомиться с примером сметы на ремонт квартиры в Геленджике. Общая площадь квартиры 50 кв.м.</p>
+        <p className={tw(`text-gray-500 leading-loose pb-2 mx-auto`)}>Предлагаем ознакомиться с примером сметы на ремонт квартиры. Общая площадь квартиры 50 кв.м.</p>
         <div className={tw(`w-full lg:w-1/2 py-6 text-center mx-auto`)}>
           <Image width="70%" height="100%" src="/images/smeta-na-remont-kvartiry-v-gelendjike.avif" layout="responsive" alt="Смета на ремонт квартиры в Геленджике" />
           <NextLink href="/zamer" passHref>
