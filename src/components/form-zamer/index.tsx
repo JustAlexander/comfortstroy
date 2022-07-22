@@ -9,7 +9,7 @@ const FormZamer = () => {
   const [name, setName] = useState(``);
   const [phone, setPhone] = useState<E164Number | undefined>();
   const [errors, setErrors] = useState(false);
-  const [buttonText, setButtonText] = useState(`Отправить заявку`);
+  const [buttonText, setButtonText] = useState(`Узнать стоимость`);
   const [showSuccessMessage, setShowSuccessMessage] = useState(false);
   const [showFailureMessage, setShowFailureMessage] = useState(false);
 
@@ -48,7 +48,7 @@ const FormZamer = () => {
       if (error) {
         setShowSuccessMessage(false);
         setShowFailureMessage(true);
-        setButtonText(`Отправить заявку`);
+        setButtonText(`Узнать стоимость`);
         // Reset form fields
         setPhone(``);
         setName(``);
@@ -56,7 +56,7 @@ const FormZamer = () => {
       }
       setShowSuccessMessage(true);
       setShowFailureMessage(false);
-      setButtonText(`Отправить заявку`);
+      setButtonText(`Узнать стоимость`);
       // Reset form fields
       setPhone(``);
       setName(``);
@@ -66,7 +66,7 @@ const FormZamer = () => {
     <section className={tw(`lg:py-28 overflow-hidden`)}>
       <div className={tw(`max-w-7xl mx-auto p-4 sm:p-6 lg:p-8 bg-white`)}>
         <div className={tw(`sm:mb-16 text-center`)}>
-          <p className={tw(`text-base text-yellow-600 font-semibold tracking-wide uppercase`)}>Бесплатно</p>
+          <p className={tw(`text-base text-yellow-600 font-semibold tracking-wide uppercase`)}>Бесплатно рассчитаем смету</p>
           <h1 className={tw(`mt-2 pb-4 text-4xl lg:text-7xl font-bold tracking-tight text-gray-900`)}>Вызвать замерщика</h1>
         </div>
         <div className={tw(`flex flex-wrap -mx-8 items-center`)}>

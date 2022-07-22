@@ -27,9 +27,16 @@ async function sendEmail(req, res) {
         <div class="img-container" style="display: flex;justify-content: center;align-items: center;border-radius: 5px;overflow: hidden; font-family: 'helvetica', 'ui-sans';">
               </div>
               <div class="container" style="margin-left: 20px;margin-right: 20px;">
-              <h3>Вызвать замерщика</h3>
-              <p>Имя: <b>${req.body.name}</b></p>
-              <p>Телефон: <b>${req.body.phone}</b></p>
+              <h3>Узнать цену за 3 минуты</h3>
+              <p>Имя: ${req.body.name}</p>
+              <p>Телефон: ${req.body.phone}</p>
+              <p>ЖК: ${req.body.jk}</p>
+              <p>Кол-комнат: ${req.body.kvartira}</p>
+              <p>Площадь: ${req.body.ploshad} кв.м.</p>
+              <p>Класс: ${req.body.class}</p>
+              <p>Бюджет: ${req.body.budget}</p>
+              <p>Когда хочет начать: ${req.body.kogda}</p>
+              <p>Подарок: ${req.body.podarok}</p>
               </div>
       </body>
       </html>`,

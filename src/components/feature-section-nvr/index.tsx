@@ -27,7 +27,7 @@ const FeatureSection = () => (
           <div className={tw(`w-full border-b pt-8 pb-8 md:w-1/2 md:p-4 md:border-r lg:w-1/3 lg:border-r-0 lg:p-8`)}>
             <div className="flex items-center mb-6">
               <Check width={20} height={20} fill="currentColor" className={tw(`h-6 w-6 text-yellow-500`)} />
-              <div className={tw(`ml-4 text-xl`)}>Дотавка стройматериалов</div>
+              <div className={tw(`ml-4 text-xl`)}>Доставка стройматериалов</div>
             </div>
             <p className={tw(`leading-loose text-gray-500`)}>Мы сами осуществляем закупку и доставку отделочных материалов, электрики оптовыми партиями у производителей и оптовых баз Краснодара. При желании, клиент может сам закупать стройматериал, но гарантийный срок на работы может быть скорректирован в зависимости от производителя материалов.</p>
           </div>

@@ -97,10 +97,10 @@ const CasesSection = () => (
                   <div className={tw(`h-64 z-20 relative`)}>
                     <Image src={article.image} alt={article.alt} className={tw(`h-full w-full object-cover overflow-hidden rounded`)} layout="fill" />
                   </div>
-                  <div className={tw(`p-4 shadow-lg w-full mx-auto -mt-8 bg-white rounded-b z-30 absolute bottom-0`)}>
+                  {/* <div className={tw(`p-4 shadow-lg w-full mx-auto -mt-8 bg-white rounded-b z-30 absolute bottom-0`)}>
                     <p className={tw(`uppercase text-sm text-gray-700 text-center pb-1`)}>{article.title}</p>
                     <p className={tw(`text-gray-500 text-center pb-1 text-sm`)}>{article.content}</p>
-                  </div>
+                  </div> */}
                 </div>
               </NextLink>
             ))}

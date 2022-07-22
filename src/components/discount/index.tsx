@@ -42,7 +42,7 @@ const Discount = () => (
                 <p className={tw(`text-gray-600`)}>Входная дверь</p>
               </li>
               <li className={tw(`flex items-center lg:col-span-1 justify-center`)}>
-                <NextLink href="/zamer" passHref>
+                <NextLink href="#survey" passHref>
                   <a>
                     <Button primary modifier="mt-6">
                       Оставить заявку
