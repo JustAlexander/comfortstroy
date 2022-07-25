@@ -179,7 +179,11 @@ const Footer = () => {
             </div>
           </div>
           <div className="text-left">
-            {showSuccessMessage && <p className={tw(`text-green-500 font-semibold text-sm my-2`)}>Спасибо! Мы уже получили вашу заявку и скоро вам позвоним.</p>}
+            {showSuccessMessage && (
+              <p id="formSendOk" className={tw(`text-green-500 font-semibold text-sm my-2`)}>
+                Спасибо! Мы уже получили вашу заявку и скоро вам позвоним.
+              </p>
+            )}
             {showFailureMessage && <p className={tw(`text-red-500`)}>Ой! Что то пошло не так, попробуйте еще раз.</p>}
           </div>
         </form>
