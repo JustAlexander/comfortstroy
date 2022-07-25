@@ -17,7 +17,7 @@ export default function Header(props) {
         <div className={tw(``)}>
           <p className={tw(`font-sans uppercase font-bold text-4xl py-5 md:text-5xl lg:text-7xl text-center leading-snug text-gray-800`)}>Сделаем вам уютный ремонт</p>
           <p className={tw(`font-sans uppercase text-3xl md:text-4xl lg:text-5xl text-center leading-snug text-yellow-600`)}>всего за 45 дней от лучших специалистов</p>
-          <p className={tw(`font-sans uppercase font-bold text-4xl py-5 md:text-5xl lg:text-7xl text-center leading-snug text-gray-800`)}>с гарантией до 36 месяцев</p>
+          <p className={tw(`font-sans uppercase font-bold text-4xl py-5 md:text-5xl lg:text-7xl text-center leading-snug text-gray-800`)}>с гарантией до 12 месяцев</p>
         </div>
       </div>
       <div className={tw(`max-w-6xl mx-auto px-5 flex justify-center w-full`)}>
