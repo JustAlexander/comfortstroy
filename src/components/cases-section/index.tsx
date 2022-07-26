@@ -107,14 +107,16 @@ const CasesSection = () => (
 
             <span
               className={tw(
-                `-mt-8 pb-12 lg:mt-4 flex items-center text-xl
+                `-mt-8 pb-12 lg:mt-4 text-xl
                 text-yellow-400 cursor-pointer z-30 hover:text-yellow-600`,
               )}
             >
               <NextLink href="/foto" passHref>
-                <a>Все фотографии</a>
+                <a className={tw(`flex items-center`)}>
+                  Все фотографии
+                  <Arrow className={tw(`h-6 w-6 fill-current ml-2`)} />
+                </a>
               </NextLink>
-              <Arrow className={tw(`h-6 w-6 fill-current ml-2`)} />
             </span>
           </div>
         </div>
