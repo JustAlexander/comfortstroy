@@ -96,7 +96,7 @@ export const questions = {
           title: 'Выберите ваш подарок',
           isRequired: true,
           colCount: 1,
-          choices: ['Теплый пол на 2 контура', 'Входная дверь'],
+          choices: ['Тёплый пол (5 кв.м.)', 'Входная дверь'],
         },
         {
           type: 'text',

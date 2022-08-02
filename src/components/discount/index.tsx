@@ -33,7 +33,7 @@ const Discount = () => (
                 <div className={tw(`flex-shrink-0`)}>
                   <Toggle type="radio" name="toggle1" checked={true} className={tw(`mr-3`)} />
                 </div>
-                <p className={tw(`text-gray-600`)}>Теплый пол на 2 контура</p>
+                <p className={tw(`text-gray-600`)}>Тёплый пол (5 кв.м.)</p>
               </li>
               <li className={tw(`flex items-center lg:col-span-1`)}>
                 <div className={tw(`flex-shrink-0`)}>
