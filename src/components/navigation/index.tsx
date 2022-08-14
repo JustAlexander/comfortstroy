@@ -16,12 +16,8 @@ type Link = {
 
 const links = [
   {
-    label: `Геленджик`,
+    label: `Краснодар`,
     href: `/`,
-  },
-  {
-    label: `Новороссийск`,
-    href: `/nvr`,
   },
 ];
 

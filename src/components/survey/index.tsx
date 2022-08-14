@@ -68,7 +68,7 @@ const SurveyComponent = () => {
           <p className={tw(`text-xl tracking-tight text-gray-900`)}>стоимость отделки вашего помещения</p>
         </div>
         <div className={tw(`mx-2`)}>
-          <p className={tw(`leading-loose font-semibold text-gray-500`)}>Ответьте на 7 вопросов и получите:</p>
+          <p className={tw(`leading-loose font-semibold text-gray-500`)}>Ответьте на 6 вопросов и получите:</p>
           <p className={tw(`leading-loose text-gray-500`)}>1) Предварительный проект ремонта</p>
           <p className={tw(`leading-loose text-gray-500`)}>2) Сметную стоимость работ и материалов «под ключ»</p>
           <p className={tw(`leading-loose text-gray-500`)}>3) Подарок за экономию нашего времени</p>

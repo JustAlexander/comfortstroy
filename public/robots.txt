@@ -2,10 +2,6 @@
 User-agent: *
 Allow: /
 
-User-agent: Yandex
-Disallow:
-Clean-param: utm
-
 # Host
 Host: https://comfortstroy.pro
 

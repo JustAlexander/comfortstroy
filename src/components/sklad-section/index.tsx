@@ -45,7 +45,7 @@ const ListSection = () => (
     <div className={tw(`max-w-7xl mx-auto p-4 sm:p-6 lg:p-8 bg-white`)}>
       <div className={tw(`mb-16 text-center`)}>
         <h2 className={tw(`text-base text-yellow-600 font-semibold tracking-wide uppercase`)}>Поможем с выбором и доставкой до квартиры</h2>
-        <p className={tw(`mt-2 pb-4 text-5xl lg:text-7xl font-bold tracking-tight text-gray-900`)}>Собственный склад с материалами в Геленджике</p>
+        <p className={tw(`mt-2 pb-4 text-5xl lg:text-7xl font-bold tracking-tight text-gray-900`)}>Собственный склад с материалами в Краснодаре</p>
       </div>
       <div className={tw(`flex flex-wrap -mx-8 items-top`)}>
         <div className={tw(`w-full lg:w-1/2 px-8`)}>

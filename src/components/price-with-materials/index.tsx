@@ -34,7 +34,7 @@ export default function PriceMaterialsSection(props) {
           </div>
           <div className={tw(`w-full lg:w-1/2 px-8`)}>
             <div className={tw(`lg:mb-12 lg:mb-0 pb-12 lg:pb-0 mt-16 lg:mt-0 mx-6 lg:mx-0`)}>
-              <Image width="100%" height="100%" src="/images/remont-odnokomnatnoj-kvartiry-gelendzhik.avif" layout="responsive" alt="Ремонт однокомнатной квартир в Геленджик под ключ" />
+              <Image width="100%" height="100%" src="/images/remont-odnokomnatnoj-kvartiry-gelendzhik.avif" layout="responsive" alt="Ремонт однокомнатной квартир в Краснодар под ключ" />
             </div>
           </div>
           <div className={tw(`w-full py-6 text-center`)}>

@@ -27,10 +27,10 @@ export default function Home() {
   const { observe, inView } = useInView({
     onEnter: ({ unobserve }) => unobserve(),
   });
-  const jk = 'Геленджике';
+  const jk = 'Краснодаре';
   return (
     <Page>
-      <NextSeo title="Ремонт квартир в Геленджике под ключ, строительство домов — Комфорт Строй Про" description="Сделать ремонт квартиры под ключ в новостройке Геленджика по договору, с оплатой в 3 этапа." additionalMetaTags={[{ name: 'yandex-verification', content: '3cac6bd75276b8d1' }]} />
+      <NextSeo title="Ремонт квартир в Краснодаре под ключ, строительство домов — Комфорт Строй Про" description="Сделать ремонт квартиры под ключ в новостройке Краснодара по договору, с оплатой в 3 этапа." additionalMetaTags={[{ name: 'yandex-verification', content: '3cac6bd75276b8d1' }]} />
       <HeaderNew jk={jk} />
       <SurveyComponent />
       <main>

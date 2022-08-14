@@ -21,19 +21,6 @@ export const questions = {
       name: 'page2',
       elements: [
         {
-          type: 'radiogroup',
-          name: 'jk',
-          title: 'В каком ЖК находится ваша квартира',
-          isRequired: true,
-          colCount: 2,
-          choices: ['Акварель', 'Акватория', 'Альбатрос', 'Горизонт', 'Изумрудный город', 'Лазурный 2', 'Легенда', 'Прованс', 'Ривьера', 'Суворов', 'Тихая гавань', 'Черноморский 2'],
-        },
-      ],
-    },
-    {
-      name: 'page3',
-      elements: [
-        {
           type: 'nouislider',
           name: 'ploshad',
           title: 'Укажите площадь вашей квартиры',
@@ -44,7 +31,7 @@ export const questions = {
       ],
     },
     {
-      name: 'page4',
+      name: 'page3',
       elements: [
         {
           type: 'radiogroup',
@@ -57,7 +44,7 @@ export const questions = {
       ],
     },
     {
-      name: 'page5',
+      name: 'page4',
       elements: [
         {
           type: 'radiogroup',
@@ -70,7 +57,7 @@ export const questions = {
       ],
     },
     {
-      name: 'page6',
+      name: 'page5',
       elements: [
         {
           type: 'radiogroup',
@@ -83,7 +70,7 @@ export const questions = {
       ],
     },
     {
-      name: 'page7',
+      name: 'page6',
       elements: [
         {
           type: 'html',

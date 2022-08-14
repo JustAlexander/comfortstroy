@@ -26,11 +26,7 @@ const productLinks = [
 ];
 const aboutLinks = [
   {
-    lable: `Новороссийск`,
-    href: `/nvr`,
-  },
-  {
-    lable: `Геленджик`,
+    lable: `Краснодар`,
     href: `/`,
   },
   {

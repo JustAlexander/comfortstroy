@@ -7,7 +7,7 @@ import FormFoto from '@/components/form-foto';
 export default function Foto() {
   return (
     <Page>
-      <NextSeo title="Фото ремонта квартир в Геленджике и Новороссийске — Комфорт Строй Про" description="Фотографии наших проектов, отделки квартир в Геленджике и Новороссийске" />
+      <NextSeo title="Фото ремонта квартир в Краснодаре — Комфорт Строй Про" description="Фотографии наших проектов, отделки квартир в Краснодаре" />
       <main>
         <GalleryProjets />
         <FormFoto />

@@ -8,7 +8,7 @@ async function sendEmail(req, res) {
     await sendgrid.send({
       to: 'aleksep@gmail.com', // Your email where you'll receive emails
       from: 'info@comfortstroy.pro', // your website email address here
-      subject: `[Заявка на ремонт]`,
+      subject: `[Заявка на ремонт Краснодар]`,
       html: `<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
       <html lang="ru">
       <head>
@@ -30,7 +30,7 @@ async function sendEmail(req, res) {
               <h3>Узнать цену за 3 минуты</h3>
               <p>Имя: ${req.body.name}</p>
               <p>Телефон: ${req.body.phone}</p>
-              <p>ЖК: ${req.body.jk}</p>
+              // <p>ЖК: ${req.body.jk}</p>
               <p>Кол-комнат: ${req.body.kvartira}</p>
               <p>Площадь: ${req.body.ploshad} кв.м.</p>
               <p>Класс: ${req.body.class}</p>

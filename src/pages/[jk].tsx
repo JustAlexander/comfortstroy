@@ -31,62 +31,14 @@ export default function Home() {
   const router = useRouter();
   let { jk } = router.query;
   switch (jk) {
-    case 'acvarel': {
-      jk = 'ЖК Акварель';
-      break;
-    }
-    case 'acvatoria': {
-      jk = 'ЖК Акватория';
-      break;
-    }
-    case 'albatros': {
-      jk = 'ЖК Альбатрос';
-      break;
-    }
-    case 'gorizont': {
-      jk = 'ЖК Горизонт';
-      break;
-    }
-    case 'legenda': {
-      jk = 'ЖК Легенда';
-      break;
-    }
-    case 'izumrudniy': {
-      jk = 'ЖК Изумрудный город';
-      break;
-    }
-    case 'tihaya-gavan': {
-      jk = 'ЖК Тихая гавань';
-      break;
-    }
-    case 'provans': {
-      jk = 'ЖК Прованс';
-      break;
-    }
-    case 'rivera': {
-      jk = 'ЖК Ривьера';
-      break;
-    }
-    case 'chernomorskiy': {
-      jk = 'ЖК Черноморский 2';
-      break;
-    }
-    case 'lazurniy': {
-      jk = 'ЖК Лазурный 2';
-      break;
-    }
-    case 'suvorov': {
-      jk = 'ЖК Суворов';
-      break;
-    }
-    default: {
-      jk = 'Геленджике';
+    case 'dostoyanie': {
+      jk = 'ЖК Достояние';
       break;
     }
   }
   return (
     <Page>
-      <NextSeo title={'Ремонт квартир в ' + jk + ' под ключ, строительство домов — Комфорт Строй Про'} description="Сделать ремонт квартиры под ключ в новостройке Геленджика по договору, с оплатой в 3 этапа." additionalMetaTags={[{ name: 'yandex-verification', content: '3cac6bd75276b8d1' }]} />
+      <NextSeo title={'Ремонт квартир в ' + jk + ' под ключ, строительство домов — Комфорт Строй Про'} description="Сделать ремонт квартиры под ключ в новостройке Краснодара по договору, с оплатой в 3 этапа." additionalMetaTags={[{ name: 'yandex-verification', content: '3cac6bd75276b8d1' }]} />
       <HeaderNew jk={jk} />
       <SurveyComponent />
       <main>
