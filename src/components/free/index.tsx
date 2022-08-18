@@ -1,5 +1,5 @@
 import { tw } from 'twind';
-import Check from '@/constants/svg/check.svg';
+import Image from 'next/image';
 import Button from '@/components/button';
 import NextLink from 'next/link';
 import Toggle from '../Toggle';
@@ -10,9 +10,12 @@ const Discount = () => (
       <div className={tw(`overflow-hidden lg:max-w-none`)}>
         <div className={tw(`py-8 px-6 md:px-0 text-center`)}>
           <h2 className={tw(`text-4xl lg:text-7xl font-bold text-gray-800 mb-12`)}>
-            <span className={tw(`bg-yellow-600 text-gray-100`)}> Акция </span>  для новостроек
+            <span className={tw(`bg-yellow-600 text-gray-100`)}> 0 рублей </span>  за монтаж дверей
           </h2>
-          <p className={tw(`mt-6 text-base leading-6 text-gray-500`)}>Если вам требуется ремонт в новостройке, то вы можете участвовать в акции и выбрать теплый пол или входную дверь в подарок.</p>
+          <div className={tw(`h-64 z-20 relative mb-5`)}>
+            <Image src="/images/doors.avif" alt="Монтаж дверей" className={tw(`h-full w-full object-contain overflow-hidden rounded`)} layout="fill" />
+          </div>
+          <p className={tw(`mt-6 text-base leading-6 text-gray-500`)}>Если вам требуется ремонт под ключ в новостройке, то монтаж входной и всех межкомнатных дверей мы выполним беслпатно</p>
           <div className={tw(`mt-8`)}>
             <div className={tw(`flex items-center`)}>
               <div className={tw(`flex-1 border-t-2 border-gray-200`)} />
@@ -26,19 +29,14 @@ const Discount = () => (
               </h3>
               <div className={tw(`flex-1 border-t-2 border-gray-200`)} />
             </div>
-            <ul className={tw(`mt-8 lg:grid lg:grid-cols-3 justify-items-center`)}>
+            <ul className={tw(`mt-8 lg:grid lg:grid-cols-1 justify-items-center`)}>
               <li className={tw(`flex items-center lg:col-span-1 my-3`)}>
                 <div className={tw(`flex-shrink-0`)}>
                   <Toggle type="radio" name="toggle1" checked={true} className={tw(`mr-3`)} />
                 </div>
-                <p className={tw(`text-gray-600`)}>Тёплый пол (5 кв.м.)</p>
+                <p className={tw(`text-gray-600`)}>Бесплатная установка входной и межкомнатных дверей</p>
               </li>
-              <li className={tw(`flex items-center lg:col-span-1`)}>
-                <div className={tw(`flex-shrink-0`)}>
-                  <Toggle type="radio" name="toggle2" className={tw(`mr-3`)} />
-                </div>
-                <p className={tw(`text-gray-600`)}>Входная дверь</p>
-              </li>
+
               <li className={tw(`flex items-center lg:col-span-1 justify-center`)}>
                 <NextLink href="#survey" passHref>
                   <a>
