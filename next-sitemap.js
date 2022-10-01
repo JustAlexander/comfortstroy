@@ -1,4 +1,4 @@
 module.exports = {
-  siteUrl: 'https://comfortstroy.pro',
+  siteUrl: 'https://krd.comfortstroy.pro',
   generateRobotsTxt: true,
-}
+};

@@ -30,7 +30,7 @@ async function sendEmail(req, res) {
               <h3>Узнать цену за 3 минуты</h3>
               <p>Имя: ${req.body.name}</p>
               <p>Телефон: ${req.body.phone}</p>
-              // <p>ЖК: ${req.body.jk}</p>
+              <p>ЖК: ${req.body.jk}</p>
               <p>Кол-комнат: ${req.body.kvartira}</p>
               <p>Площадь: ${req.body.ploshad} кв.м.</p>
               <p>Класс: ${req.body.class}</p>

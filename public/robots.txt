@@ -3,7 +3,7 @@ User-agent: *
 Allow: /
 
 # Host
-Host: https://comfortstroy.pro
+Host: https://krd.comfortstroy.pro
 
 # Sitemaps
-Sitemap: https://comfortstroy.pro/sitemap.xml
+Sitemap: https://krd.comfortstroy.pro/sitemap.xml

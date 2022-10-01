@@ -21,6 +21,19 @@ export const questions = {
       name: 'page2',
       elements: [
         {
+          type: 'radiogroup',
+          name: 'jk',
+          title: 'В каком ЖК находится ваша квартира',
+          isRequired: true,
+          colCount: 1,
+          choices: ['Достояние', 'Другой ЖК'],
+        },
+      ],
+    },
+    {
+      name: 'page3',
+      elements: [
+        {
           type: 'nouislider',
           name: 'ploshad',
           title: 'Укажите площадь вашей квартиры',
@@ -31,7 +44,7 @@ export const questions = {
       ],
     },
     {
-      name: 'page3',
+      name: 'page4',
       elements: [
         {
           type: 'radiogroup',
@@ -44,7 +57,7 @@ export const questions = {
       ],
     },
     {
-      name: 'page4',
+      name: 'page5',
       elements: [
         {
           type: 'radiogroup',
@@ -52,12 +65,12 @@ export const questions = {
           title: 'В какой бюджет вы хотите уложиться?',
           isRequired: true,
           colCount: 1,
-          choices: ['До 200 000 рублей', '200 000 - 300 000 рублей', '300 000 - 400 000 рублей', '400 000 - 500 000 рублей', '500 000 - 600 000 рублей', '600 000 - 700 000 рублей', '750 000 - 800 000 рублей', 'Больше 800 000 рублей'],
+          choices: ['До 500 000 рублей', '500 000 - 600 000 рублей', '600 000 - 700 000 рублей', '700 000 - 800 000 рублей', '800 000 - 900 000 рублей', '900 000 - 1 000 000 рублей', '1 000 000 - 1 100 000 рублей', 'Больше 1 100 000 рублей'],
         },
       ],
     },
     {
-      name: 'page5',
+      name: 'page6',
       elements: [
         {
           type: 'radiogroup',
@@ -70,7 +83,7 @@ export const questions = {
       ],
     },
     {
-      name: 'page6',
+      name: 'page7',
       elements: [
         {
           type: 'html',
