@@ -10,7 +10,7 @@ import PricingTable from '@/components/pricing-table';
 import Footer from '@/components/footer';
 import useInView from 'react-cool-inview';
 import dynamic from 'next/dynamic';
-import Discount from '@/components/discount-jk';
+import Free from '@/components/free';
 import PriceWithMaterials from '@/components/price-with-materials';
 import Smeta from '@/components/smeta';
 import Dogovor from '@/components/dogovor';
@@ -44,7 +44,7 @@ export default function Home() {
       <main>
         <VideoJkSection img={router.query.jk} jk={jk} />
         <ListSection />
-        <Discount jk={jk} />
+        <Free />
         <div ref={observe}>
           <FeatureSection jk={jk} />
         </div>
