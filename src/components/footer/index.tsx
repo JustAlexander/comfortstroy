@@ -30,8 +30,8 @@ const aboutLinks = [
     href: `/`,
   },
   {
-    lable: `ул. Халтурина, 11`,
-    href: `https://goo.gl/maps/po249uJ4EkjD5okL9`,
+    lable: `Кубанская набережная, 64`,
+    href: `https://goo.gl/maps/AW5ANHqFQhnb3K7j7`,
   },
   {
     lable: `info@comfortstroy.pro`,
