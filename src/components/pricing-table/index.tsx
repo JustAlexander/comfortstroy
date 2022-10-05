@@ -48,8 +48,8 @@ export default function PricingTable(props) {
             <p className={tw(`text-lg font-medium text-gray-800`)}>
               <b>Цена за м2</b>
             </p>
-            <p className={tw(`text-lg font-medium text-gray-800`)}>с учётом всех материалов</p>
-            <div className={tw(`my-4 flex items-center justify-center text-6xl leading-none font-bold text-gray-800`)}>от 10 000 ₽</div>
+            <p className={tw(`text-lg font-medium text-gray-800`)}>с учётом всех материалов от</p>
+            <div className={tw(`my-4 flex items-center justify-center text-6xl leading-none font-bold text-gray-800`)}>10 000 ₽</div>
             <NextLink href="/zamer" passHref>
               <a>
                 <Button primary modifier="mt-6">
