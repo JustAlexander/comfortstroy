@@ -35,6 +35,10 @@ export default function Home() {
       jk = 'ЖК Достояние';
       break;
     }
+    case 'parkpobedy': {
+      jk = 'ЖК Парк победы';
+      break;
+    }
   }
   return (
     <Page>

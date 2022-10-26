@@ -26,7 +26,7 @@ export const questions = {
           title: 'В каком ЖК находится ваша квартира',
           isRequired: true,
           colCount: 1,
-          choices: ['Достояние', 'Другой ЖК'],
+          choices: ['Достояние', 'Парк победы', 'Другой ЖК'],
         },
       ],
     },
