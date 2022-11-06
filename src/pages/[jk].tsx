@@ -39,6 +39,10 @@ export default function Home() {
       jk = 'ЖК Парк победы';
       break;
     }
+    case 'krasnayaploshad': {
+      jk = 'NEO-квартал Красная площадь';
+      break;
+    }
   }
   return (
     <Page>
