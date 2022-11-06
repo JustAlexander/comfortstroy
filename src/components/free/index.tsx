@@ -5,7 +5,7 @@ import NextLink from 'next/link';
 import Toggle from '../Toggle';
 
 const Discount = () => (
-  <section id="price" className={tw(`bg-gray-100 shadow-inner pt-12`)}>
+  <section id="free" className={tw(`bg-gray-100 shadow-inner pt-12`)}>
     <div className={tw(`relative max-w-7xl mx-auto pb-10 mb-24`)}>
       <div className={tw(`overflow-hidden lg:max-w-none`)}>
         <div className={tw(`py-8 px-6 md:px-0 text-center`)}>

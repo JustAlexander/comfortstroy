@@ -76,7 +76,7 @@ const articles = [
 ];
 
 const CasesSection = () => (
-  <section>
+  <section id="foto">
     <div className={tw(`w-full min-h-screen bg-gray-900 relative`)}>
       <div className={tw(`absolute left-0 top-0 h-screen w-full overflow-hidden`)}>
         <ParticleBg />

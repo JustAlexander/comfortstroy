@@ -80,7 +80,7 @@ const SocialProof = () => {
           <p className={tw(`text-base pb-2 text-yellow-600 font-semibold tracking-wide uppercase`)}>Отзывы</p>
           <h2 className={tw(`mt-2 pb-4 text-5xl lg:text-7xl font-bold tracking-tight text-gray-900`)}>Мнения наших клиентов</h2>
         </div>
-        <section>
+        <section id="otzyvy">
           <div className={tw(`flex flex-wrap items-center`)}>
             <div className={tw(`w-full lg:w-1/2 px-6 md:px-0 sm:p-6 lg:p-8`)}>
               <figure>
