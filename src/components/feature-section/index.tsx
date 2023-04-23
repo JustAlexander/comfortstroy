@@ -60,22 +60,22 @@ export default function FeatureSection(props) {
             </div>
             <div className={tw(`w-full md:w-1/2 md:p-1 lg:w-1/4 lg:p-1`)}>
               <div className={tw(`h-64 z-20 relative`)}>
-                <Image src="/images/podhod1.avif" alt="Затирка для пола" className={tw(`h-full w-full object-contain overflow-hidden rounded`)} layout="fill" />
+                <Image src="/images/podhod1.webp" alt="Затирка для пола" className={tw(`h-full w-full object-contain overflow-hidden rounded`)} layout="fill" />
               </div>
             </div>
             <div className={tw(`w-full md:w-1/2 md:p-1 lg:w-1/4 lg:p-1`)}>
               <div className={tw(`h-64 z-20 relative`)}>
-                <Image src="/images/podhod2.avif" alt="Затирка для пола" className={tw(`h-full w-full object-contain overflow-hidden rounded`)} layout="fill" />
+                <Image src="/images/podhod2.webp" alt="Затирка для пола" className={tw(`h-full w-full object-contain overflow-hidden rounded`)} layout="fill" />
               </div>
             </div>
             <div className={tw(`w-full md:w-1/2 md:p-1 lg:w-1/4 lg:p-1`)}>
               <div className={tw(`h-64 z-20 relative`)}>
-                <Image src="/images/podhod3.avif" alt="Затирка для пола" className={tw(`h-full w-full object-contain overflow-hidden rounded`)} layout="fill" />
+                <Image src="/images/podhod3.webp" alt="Затирка для пола" className={tw(`h-full w-full object-contain overflow-hidden rounded`)} layout="fill" />
               </div>
             </div>
             <div className={tw(`w-full md:w-1/2 md:p-1 lg:w-1/4 lg:p-1`)}>
               <div className={tw(`h-64 z-20 relative`)}>
-                <Image src="/images/podhod4.avif" alt="Затирка для пола" className={tw(`h-full w-full object-contain overflow-hidden rounded`)} layout="fill" />
+                <Image src="/images/podhod4.webp" alt="Затирка для пола" className={tw(`h-full w-full object-contain overflow-hidden rounded`)} layout="fill" />
               </div>
             </div>
           </div>

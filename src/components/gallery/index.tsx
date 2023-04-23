@@ -88,7 +88,7 @@ const articles = [
     height: `622`,
   },
   {
-    key: `9`,
+    key: `101`,
     image: `https://res.cloudinary.com/ddpeoofxn/image/upload/c_fill,w_400,h_194/f_auto/v1640778471/comfortstroy/910d9e2e-393c-485e-8b50-31ac0b6554f6_jwb38o.jpg`,
     imagebig: `https://res.cloudinary.com/ddpeoofxn/image/upload/f_auto/v1640778471/comfortstroy/910d9e2e-393c-485e-8b50-31ac0b6554f6_jwb38o.jpg`,
     alt: `Ремонт квартиры в Краснодаре`,

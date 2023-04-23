@@ -12,7 +12,7 @@ const Equipment = () => (
         <div className={tw(`flex flex-wrap my-12`)}>
           <div className={tw(`w-full md:w-1/2 pb-8 md:p-4 lg:w-1/4 lg:p-4`)}>
             <div className={tw(`h-64 z-20 relative mb-5`)}>
-              <Image src="/images/zatirka.avif" alt="Затирка для пола" className={tw(`h-full w-full object-contain overflow-hidden rounded`)} layout="fill" />
+              <Image src="/images/zatirka.webp" alt="Затирка для пола" className={tw(`h-full w-full object-contain overflow-hidden rounded`)} layout="fill" />
             </div>
             <div className={tw(`flex items-center mb-6`)}>
               <div className={tw(`text-xl`)}>Затирка для пола</div>
@@ -21,7 +21,7 @@ const Equipment = () => (
           </div>
           <div className={tw(`w-full pt-8 pb-8 md:w-1/2 md:p-4 lg:w-1/4 lg:p-4`)}>
             <div className={tw(`h-64 z-20 relative mb-5`)}>
-              <Image src="/images/shtukaturka.avif" alt="Затирка для пола" className={tw(`h-full w-full object-contain overflow-hidden rounded`)} layout="fill" />
+              <Image src="/images/shtukaturka.webp" alt="Затирка для пола" className={tw(`h-full w-full object-contain overflow-hidden rounded`)} layout="fill" />
             </div>
             <div className={tw(`flex items-center mb-6`)}>
               <div className={tw(`text-xl`)}>Механизированная штукатурка</div>
@@ -30,7 +30,7 @@ const Equipment = () => (
           </div>
           <div className={tw(`w-full pt-8 pb-8 md:w-1/2 md:p-4 lg:w-1/4 lg:p-4`)}>
             <div className={tw(`h-64 z-20 relative mb-5`)}>
-              <Image src="/images/plitkarez.avif" alt="Затирка для пола" className={tw(`h-full w-full object-contain overflow-hidden rounded`)} layout="fill" />
+              <Image src="/images/plitkarez.webp" alt="Затирка для пола" className={tw(`h-full w-full object-contain overflow-hidden rounded`)} layout="fill" />
             </div>
             <div className="flex items-center mb-6">
               <div className={tw(`text-xl`)}>Водяной плиткорез</div>
@@ -39,7 +39,7 @@ const Equipment = () => (
           </div>
           <div className={tw(`w-full pt-8 pb-8 md:w-1/2 md:p-4 lg:w-1/4 lg:p-4`)}>
             <div className={tw(`h-64 z-20 relative mb-5`)}>
-              <Image src="/images/pnevma.avif" alt="Затирка для пола" className={tw(`h-full w-full object-contain overflow-hidden rounded`)} layout="fill" />
+              <Image src="/images/pnevma.webp" alt="Затирка для пола" className={tw(`h-full w-full object-contain overflow-hidden rounded`)} layout="fill" />
             </div>
             <div className={tw(`flex items-center mb-6`)}>
               <div className={tw(`text-xl`)}>Пневмонагнетатель</div>
