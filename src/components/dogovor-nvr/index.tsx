@@ -13,7 +13,7 @@ const ListSection = () => (
       <div className={tw(`flex flex-wrap items-center`)}>
         <p className={tw(`text-gray-500 leading-loose pb-2 mx-auto`)}>Так как мы работаем только по договору подряда, то в нем официально закрепляется сумма отделки квартиры в Новороссийске и она не меняется в ходе работы. У нас нет скрытых расходов. Ремонт вам обойдется ровно в столько, сколько будет прописано в смете и договоре на отделку квартиры в Новороссийске.</p>
         <div className={tw(`w-full lg:w-1/2 py-6 text-center mx-auto`)}>
-          <Image width="70%" height="100%" src="/images/dogovor-na-otdelku-kravtiry-v-gelengzhike.avif" layout="responsive" alt="Смета на ремонт квартиры в Новороссийске" />
+          <Image width="70%" height="100%" src="/images/dogovor-na-otdelku-kravtiry-v-gelengzhike.webp" layout="responsive" alt="Смета на ремонт квартиры в Новороссийске" />
           <NextLink href="/zamer" passHref>
             <a className={tw(`object-none object-center`)}>
               <Button primary modifier="mt-10">

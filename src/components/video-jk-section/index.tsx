@@ -20,7 +20,7 @@ export default function VideoSection(props) {
           <div className={tw(`w-full`)}>
             <div className={tw(`relative shadow-2xl mx-6 lg:mx-0`)}>
               {/* <Preferences width="100%" height="100%" /> */}
-              <Image src={'/images/jk/' + props.img + '.avif'} width={600} height={400} layout="responsive" alt={'Видео ремонта квартиры в ' + props.jk + ' под ключ'} />
+              <Image src={'/images/jk/' + props.img + '.webp'} width={600} height={400} layout="responsive" alt={'Видео ремонта квартиры в ' + props.jk + ' под ключ'} />
               <button
                 onClick={handleClick}
                 type="button"

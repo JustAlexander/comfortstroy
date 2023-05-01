@@ -7,23 +7,23 @@ import NextLink from 'next/link';
 
 const slideImages = [
   {
-    url: '/images/kuhni-1.avif',
+    url: '/images/kuhni-1.webp',
     caption: 'Кухня',
   },
   {
-    url: '/images/kuhni-2.avif',
+    url: '/images/kuhni-2.webp',
     caption: 'Кухня',
   },
   {
-    url: '/images/kuhni-3.avif',
+    url: '/images/kuhni-3.webp',
     caption: 'Кухня',
   },
   {
-    url: '/images/kuhni-4.avif',
+    url: '/images/kuhni-4.webp',
     caption: 'Кухня',
   },
   {
-    url: '/images/kuhni-5.avif',
+    url: '/images/kuhni-5.webp',
     caption: 'Кухня',
   },
 ];

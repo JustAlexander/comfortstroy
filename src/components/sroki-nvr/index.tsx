@@ -11,7 +11,7 @@ const ListSection = () => (
       <div className={tw(`flex flex-wrap items-center`)}>
         <p className={tw(`text-gray-500 leading-loose pb-2 mx-auto`)}>Сроки ремонта квартиры в новостройке Новороссийска зависят от объёма и сложности работ, но в среднем варьируются от 2 до 3 месяцев. Мы не нарушаем сроки и гарантируем сдачу объекта вовремя. К тому же, дата начала и окончания ремонта квартиры новостройки в Новороссийске зафиксирована в договоре.</p>
         <div className={tw(`w-full py-6 text-center mx-auto`)}>
-          <Image width="100%" height="40%" src="/images/sroki-remonta-kvartiry-novostroyki-v-gelengjike1.avif" layout="responsive" alt="Сроки на ремонт квартиры в Новороссийске" />
+          <Image width="100%" height="40%" src="/images/sroki-remonta-kvartiry-novostroyki-v-gelengjike1.webp" layout="responsive" alt="Сроки на ремонт квартиры в Новороссийске" />
         </div>
       </div>
     </div>

@@ -121,7 +121,7 @@ const SocialProof = () => {
               </div>
             </div>
             <div className={tw(`w-full lg:w-1/2 px-2 pt-14`)}>
-              <Image width="100%" height="100%" src="/images/otzyvy.avif" layout="responsive" alt="Ремонт однокомнатной квартир в Геленджик под ключ" />
+              <Image width="100%" height="100%" src="/images/otzyvy.webp" layout="responsive" alt="Ремонт однокомнатной квартир в Геленджик под ключ" />
             </div>
           </div>
         </section>

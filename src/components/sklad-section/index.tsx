@@ -8,19 +8,19 @@ import NextLink from 'next/link';
 
 const slideImages = [
   {
-    url: '/images/sk-1.avif',
+    url: '/images/sk-1.webp',
     caption: 'Склад',
   },
   {
-    url: '/images/sk-2.avif',
+    url: '/images/sk-2.webp',
     caption: 'Склад',
   },
   {
-    url: '/images/kv-1.avif',
+    url: '/images/kv-1.webp',
     caption: 'Квартира',
   },
   {
-    url: '/images/kv-2.avif',
+    url: '/images/kv-2.webp',
     caption: 'Квартира',
   },
 ];
