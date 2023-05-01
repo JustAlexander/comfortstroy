@@ -15,7 +15,7 @@ const Discount = () => (
           <div className={tw(`h-64 z-20 relative mb-5`)}>
             <Image src="/images/doors.webp" alt="Монтаж дверей" className={tw(`h-full w-full object-contain overflow-hidden rounded`)} layout="fill" />
           </div>
-          <p className={tw(`mt-6 text-base leading-6 text-gray-500`)}>Если вам требуется ремонт под ключ в новостройке, то монтаж входной и всех межкомнатных дверей мы выполним бесплатно</p>
+          <p className={tw(`mt-6 text-base leading-6 text-gray-500`)}>Если вам требуется ремонт под ключ в новостройке, то монтаж всех межкомнатных дверей мы выполним бесплатно</p>
           <div className={tw(`mt-8`)}>
             <div className={tw(`flex items-center`)}>
               <div className={tw(`flex-1 border-t-2 border-gray-200`)} />
@@ -34,7 +34,7 @@ const Discount = () => (
                 <div className={tw(`flex-shrink-0`)}>
                   <Toggle type="radio" name="toggle1" checked={true} className={tw(`mr-3`)} />
                 </div>
-                <p className={tw(`text-gray-600`)}>Бесплатная установка входной и межкомнатных дверей</p>
+                <p className={tw(`text-gray-600`)}>Бесплатная установка межкомнатных дверей</p>
               </li>
 
               <li className={tw(`flex items-center lg:col-span-1 justify-center`)}>
