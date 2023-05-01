@@ -37,6 +37,7 @@
     "@sendgrid/mail": "7.6.1",
     "@svgr/webpack": "6.2.1",
     "@twind/next": "1.0.9",
+    "@vercel/analytics": "1.0.0",
     "inputmask": "5.0.7",
     "libphonenumber-js": "1.9.49",
     "next": "12",

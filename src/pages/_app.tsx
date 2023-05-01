@@ -6,6 +6,7 @@ import withTwindApp from '@twind/next/app';
 import twindConfig from '../twind.config';
 import { useEffect } from 'react';
 import TagManager from 'react-gtm-module';
+import { Analytics } from '@vercel/analytics/react';
 
 function MyApp({ Component, pageProps }: AppProps) {
   useEffect(() => {
@@ -15,6 +16,7 @@ function MyApp({ Component, pageProps }: AppProps) {
   return (
     <>
       <Component {...pageProps} />;
+      <Analytics />
     </>
   );
 }
