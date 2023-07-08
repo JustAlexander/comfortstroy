@@ -34,10 +34,11 @@ export default function FormStoimost(props) {
     const isValidForm = handleValidation();
     if (isValidForm) {
       setButtonText(`Отправка...`);
-      const res = await fetch(`/api/form-foto`, {
+      const res = await fetch(`/api/form-stoimost`, {
         body: JSON.stringify({
           name,
           phone,
+          jk: props.jk,
         }),
         headers: {
           'Content-Type': `application/json`,
