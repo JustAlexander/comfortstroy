@@ -44,7 +44,7 @@ const aboutLinks = [
 ];
 const resourceLinks = [
   {
-    lable: `Вызвать замерщика`,
+    lable: `Узнать стоимость`,
     href: `/zamer`,
   },
   {

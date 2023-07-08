@@ -19,6 +19,7 @@ import Equipment from '@/components/equipment';
 import Sklad from '@/components/sklad-section';
 import KuhniSection from '@/components/kuhni-section';
 import { useRouter } from 'next/router';
+import FormStoimost from '@/components/form-stoimost';
 const CasesSection = dynamic(() => import('@/components/cases-section'));
 const SurveyComponent = dynamic(() => import('@/components/survey'), {
   ssr: false,
@@ -43,12 +44,53 @@ export default function Home() {
       jk = 'NEO-квартал Красная площадь';
       break;
     }
+    case 'samolet': {
+      jk = 'ЖК Самолёт';
+      break;
+    }
+    case 'leto': {
+      jk = 'ЖК Лето';
+      break;
+    }
+    case 'dogmapark': {
+      jk = 'ЖК DOGMA PARK';
+      break;
+    }
+    case 'sarmat': {
+      jk = 'ЖК Сармат';
+      break;
+    }
+    case 'zelenayaterritoria': {
+      jk = 'ЖК Зеленая территория';
+      break;
+    }
+    case 'ugane': {
+      jk = 'ЖК Южане';
+      break;
+    }
+    case 'dvigenie': {
+      jk = 'ЖК Движение';
+      break;
+    }
+    case 'obraztsovo': {
+      jk = 'ЖК Образцово';
+      break;
+    }
+    case 'mozaika': {
+      jk = 'ЖК Мозаика';
+      break;
+    }
+    default: {
+      jk = 'Краснодар';
+      break;
+    }
   }
   return (
     <Page>
       <NextSeo title={'Ремонт квартир в ' + jk + ' под ключ, строительство домов — Комфорт Строй Про'} description="Сделать ремонт квартиры под ключ в новостройке Краснодара по договору, с оплатой в 3 этапа." additionalMetaTags={[{ name: 'yandex-verification', content: '3cac6bd75276b8d1' }]} />
       <HeaderNew jk={jk} />
-      <SurveyComponent />
+      <FormStoimost jk={jk} />
+      {/* <SurveyComponent /> */}
       <main>
         <VideoJkSection img={router.query.jk} jk={jk} />
         <ListSection />

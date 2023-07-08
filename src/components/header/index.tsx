@@ -22,7 +22,7 @@ const Header = () => (
         <div className={tw(`w-full sm:(w-1/3 text-right)`)}>
           <NextLink href="/zamer" passHref>
             <a>
-              <Button>Вызвать замерщика</Button>
+              <Button>Узнать стоимость</Button>
             </a>
           </NextLink>
         </div>
