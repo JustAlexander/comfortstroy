@@ -1,10 +1,10 @@
 import { tw } from 'twind';
-import FeatureSvg from '@/constants/svg/features.svg';
+import FeatureSvg from '@/constants/svg/remont.svg';
 
 const listItems = [
   {
     title: `Цена`,
-    description: `Не меняется на протяжении всего ремонта, т.к. у нас нет дополнительных или скрытых расходов. К тому же, общая сумма ремонта закреплена в договоре.`,
+    description: `Не меняется на протяжении всего ремонта квартиры, т.к. у нас нет дополнительных или скрытых расходов. К тому же, общая сумма отделки закреплена в договоре.`,
   },
   {
     title: `Специалисты`,
@@ -37,7 +37,7 @@ const ListSection = () => (
                     {index + 1}
                   </span>
                 </div>
-                <div className={tw(`px-4`)}>
+                <div className={tw(`pr-4`)}>
                   <h3 className={tw(`my-4 text-xl font-semibold`)}>{item.title}</h3>
                   <p className={tw(`text-gray-500 leading-loose`)}>{item.description}</p>
                 </div>

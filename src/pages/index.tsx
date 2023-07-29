@@ -18,6 +18,7 @@ import Sroki from '@/components/sroki';
 import Equipment from '@/components/equipment';
 import Sklad from '@/components/sklad-section';
 import KuhniSection from '@/components/kuhni-section';
+import FormStoimost from '@/components/form-stoimost';
 const CasesSection = dynamic(() => import('@/components/cases-section'));
 const SurveyComponent = dynamic(() => import('@/components/survey'), {
   ssr: false,
@@ -32,7 +33,8 @@ export default function Home() {
     <Page>
       <NextSeo title="Ремонт квартир в Геленджике под ключ, строительство домов — Комфорт Строй Про" description="Сделать ремонт квартиры под ключ в новостройке Геленджика по договору, с оплатой в 3 этапа." additionalMetaTags={[{ name: 'yandex-verification', content: '3cac6bd75276b8d1' }]} />
       <HeaderNew jk={jk} />
-      <SurveyComponent />
+      <FormStoimost />
+      {/* <SurveyComponent /> */}
       <main>
         <VideoSection />
         <ListSection />
