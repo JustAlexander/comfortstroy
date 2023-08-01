@@ -7,3 +7,6 @@ Host: https://comfortstroy.pro
 
 # Sitemaps
 Sitemap: https://comfortstroy.pro/sitemap.xml
+
+User-agent: Yandex
+Clean-param: utm
