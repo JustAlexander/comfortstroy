@@ -94,7 +94,7 @@ export default function Home() {
       <main>
         <VideoJkSection img={router.query.jk} jk={jk} />
         <ListSection />
-        <Free />
+{/*         <Free /> */}
         <div ref={observe}>
           <FeatureSection jk={jk} />
         </div>
