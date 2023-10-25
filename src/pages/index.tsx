@@ -38,7 +38,7 @@ export default function Home() {
       <main>
         <VideoSection />
         <ListSection />
-        <Free />
+{/*         <Free /> */}
         <div ref={observe}>
           <FeatureSection jk={jk} />
         </div>
