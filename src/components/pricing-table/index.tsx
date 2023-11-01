@@ -13,7 +13,7 @@ export default function PricingTable(props) {
           <div className={tw(`py-8 px-6 md:px-0 lg:flex-shrink-1`)}>
             <h2 className={tw(`text-4xl lg:text-7xl font-bold text-gray-800 mb-12`)}>Цена на ремонт в {props.jk}</h2>
             <p className={tw(`text-gray-500 leading-loose pb-2`)}>
-              Средняя цена ремонта квартиры в {props.jk} от нашей компании Комфорт Строй Про, составляет от 10000 руб. за квадратный метр. Ниже представлен полный перечень работ и стоимость. Обратите внимание, что здесь указана цена ремонта квартиры в {props.jk} с учётом материалов.
+              Средняя цена ремонта квартиры в {props.jk} от нашей компании Комфорт Строй Про, составляет от 11500 руб. за квадратный метр. Ниже представлен полный перечень работ и стоимость. Обратите внимание, что здесь указана цена ремонта квартиры в {props.jk} с учётом материалов.
             </p>
             <div className={tw(`mt-8`)}>
               <div className={tw(`flex items-center`)}>
@@ -49,7 +49,7 @@ export default function PricingTable(props) {
               <b>Цена за м2</b>
             </p>
             <p className={tw(`text-lg font-medium text-gray-800`)}>с учётом материалов от</p>
-            <div className={tw(`my-4 flex items-center justify-center text-6xl leading-none font-bold text-gray-800`)}>10 000 ₽</div>
+            <div className={tw(`my-4 flex items-center justify-center text-6xl leading-none font-bold text-gray-800`)}>11 500 ₽</div>
             <NextLink href="/zamer" passHref>
               <a>
                 <Button primary modifier="mt-6">
