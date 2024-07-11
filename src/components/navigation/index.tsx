@@ -32,7 +32,7 @@ const secondaryLinks = [
   },
   {
     label: `Позвонить`,
-    href: `tel:+79883474217`,
+    href: `tel:+79897602629`,
   },
   {
     label: `Оставить заявку`,
@@ -109,7 +109,7 @@ const Navigation = () => {
                   <Button modifier="border-0 mr-2">Калькулятор</Button>
                 </a>
               </NextLink>
-              <a href="tel:+79883474217">
+              <a href="tel:+79897602629">
                 <Button modifier="border-0 mr-2">Позвонить</Button>
               </a>
               <NextLink href="/zamer" passHref>

@@ -41,10 +41,6 @@ const aboutLinks = [
     lable: `info@comfortstroy.pro`,
     href: `mailto:info@comfortstroy.pro`,
   },
-  {
-    lable: `+7(988)347-42-17`,
-    href: `tel:+79883474217`,
-  },
 ];
 const resourceLinks = [
   {
