@@ -19,6 +19,7 @@ import Equipment from '@/components/equipment';
 import Sklad from '@/components/sklad-section';
 import KuhniSection from '@/components/kuhni-section';
 import FormStoimost from '@/components/form-stoimost';
+import ChatButton from '@/components/chatButton';
 const CasesSection = dynamic(() => import('@/components/cases-section'));
 const SurveyComponent = dynamic(() => import('@/components/survey'), {
   ssr: false,
@@ -32,7 +33,7 @@ export default function Home() {
   return (
     <Page>
       <NextSeo title="Ремонт квартир в Геленджике под ключ, строительство домов — Комфорт Строй Про" description="Сделать ремонт квартиры под ключ в новостройке Геленджика по договору, с оплатой в 3 этапа." additionalMetaTags={[{ name: 'yandex-verification', content: '3cac6bd75276b8d1' }]} />
-      <HeaderNew jk={jk} />
+      <HeaderNew />
       <FormStoimost />
       {/* <SurveyComponent /> */}
       <main>
@@ -40,18 +41,19 @@ export default function Home() {
         <ListSection />
 {/*         <Free /> */}
         <div ref={observe}>
-          <FeatureSection jk={jk} />
+          <FeatureSection />
         </div>
         <Equipment />
         <Sklad />
         {inView && <CasesSection />}
         <KuhniSection />
         <SocialProof />
-        <PricingTable jk={jk} />
-        <PriceWithMaterials jk={jk} />
+        <PricingTable />
+        <PriceWithMaterials />
         <Smeta />
-        <Dogovor jk={jk} />
+        <Dogovor />
         <Sroki />
+        <ChatButton />
       </main>
       <Footer />
     </Page>

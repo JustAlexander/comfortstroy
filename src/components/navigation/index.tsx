@@ -20,8 +20,8 @@ const links = [
     href: `/`,
   },
   {
-    label: `Новороссийск`,
-    href: `/nvr`,
+    label: `Краснодар`,
+    href: `https://krd.comfortstroy.pro/`,
   },
 ];
 

@@ -12,7 +12,7 @@ export default function Discount(props) {
             <h2 className={tw(`text-4xl lg:text-7xl font-bold text-gray-800 mb-12`)}>
               <span className={tw(`bg-yellow-600 text-gray-100`)}> Акция </span>  для собственников
             </h2>
-            <p className={tw(`mt-6 text-base leading-6 text-gray-500`)}>Если вам требуется ремонт в {props.jk}, то вы можете участвовать в акции и выбрать теплый пол или входную дверь в подарок.</p>
+            <p className={tw(`mt-6 text-base leading-6 text-gray-500`)}>Если вам требуется ремонт в Геленджике, то вы можете участвовать в акции и выбрать теплый пол или входную дверь в подарок.</p>
             <div className={tw(`mt-8`)}>
               <div className={tw(`flex items-center`)}>
                 <div className={tw(`flex-1 border-t-2 border-gray-200`)} />
@@ -40,7 +40,7 @@ export default function Discount(props) {
                   <p className={tw(`text-gray-600`)}>Входная дверь</p>
                 </li>
                 <li className={tw(`flex items-center lg:col-span-1 justify-center`)}>
-                  <NextLink href="#survey" passHref>
+                  <NextLink href="/zamer" passHref>
                     <a>
                       <Button primary modifier="mt-6">
                         Оставить заявку

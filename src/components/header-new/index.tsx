@@ -3,7 +3,7 @@ import Button from '@/components/button';
 import Check from '@/constants/svg/check.svg';
 import NextLink from 'next/link';
 
-export default function Header(props) {
+export default function Header() {
   const headerStyle = css`
     background-color: #ffffff;
     min-height: calc(100vh - 6rem);
@@ -12,7 +12,7 @@ export default function Header(props) {
     <header className={tw(headerStyle)}>
       <div className={tw(`max-w-6xl mx-auto pt-16 px-5 sm:px-6 lg:px-8`)}>
         <h1 className={tw(`mt-10 text-gray-500 text-center lg:text-2xl`)}>
-          Ремонт квартир в <span className={tw(`bg-yellow-600 text-gray-100`)}> {props.jk} </span>
+          Ремонт квартир в <span className={tw(`bg-yellow-600 text-gray-100`)}> Геленджике </span>
         </h1>
         <div className={tw(``)}>
           <p className={tw(`font-sans uppercase font-bold text-4xl py-5 md:text-5xl lg:text-7xl text-center leading-snug text-gray-800`)}>Сделаем вам уютный ремонт</p>

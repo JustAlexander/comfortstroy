@@ -18,19 +18,19 @@ const listItems = [
   },
 ];
 
-export default function PriceMaterialsSection(props) {
+export default function PriceMaterialsSection() {
   return (
     <section className={tw(`lg:py-28 pt-28 overflow-hidden`)}>
       <div className={tw(`max-w-7xl mx-auto py-4 px-6 sm:p-6 lg:p-8 bg-white`)}>
         <div className={tw(`mb-16 text-center`)}>
           <p className={tw(`text-base pb-2 text-yellow-600 font-semibold tracking-wide uppercase`)}>Цена с материалами на примере</p>
-          <h2 className={tw(`mt-2 pb-4 text-5xl lg:text-7xl font-bold tracking-tight text-gray-900`)}>Ремонта однокомнатной квартиры в {props.jk}</h2>
+          <h2 className={tw(`mt-2 pb-4 text-5xl lg:text-7xl font-bold tracking-tight text-gray-900`)}>Ремонта однокомнатной квартиры в Геленджике</h2>
         </div>
         <div className={tw(`flex flex-wrap items-center`)}>
           <div className={tw(`w-full lg:w-1/2`)}>
-            <p className={tw(`text-gray-500 leading-loose pb-2`)}>Стоимость ремонта однокомнатной квартиры в {props.jk} с материалами, общей площадью 50 кв.м., составит примерно 550 000 руб.</p>
+            <p className={tw(`text-gray-500 leading-loose pb-2`)}>Стоимость ремонта однокомнатной квартиры в Геленджике с материалами, общей площадью 50 кв.м., составит примерно 550 000 руб.</p>
             <p className={tw(`text-gray-500 leading-loose pb-2`)}> В эту сумму входят все работы, весь малярный и расходный материал, натяжные потолки (работа + материалы), разводка и монтаж сантехнических узлов, установка сантехники и санфаянса, механическая стяжка полов, электромонтаж (развода и монтаж электроточек, точек освещеия, ТВ и интернет каналов), установка электроприборов, система вентиляции, гидроизоляция, разгрузка и подъем отделочных материалов, вывоз строительного мусора, уборка после ремонта.</p>
-            <p className={tw(`text-gray-500 leading-loose pb-2`)}>В эту сумму ремонта однокомнатной квартиры в {props.jk} не вошли материалы, которые заказчик выбирает на свой вкус (обои, люстры, смесители и т.п.)</p>
+            <p className={tw(`text-gray-500 leading-loose pb-2`)}>В эту сумму ремонта однокомнатной квартиры в Геленджике не вошли материалы, которые заказчик выбирает на свой вкус (обои, люстры, смесители и т.п.)</p>
           </div>
           <div className={tw(`w-full lg:w-1/2 px-8`)}>
             <div className={tw(`lg:mb-12 lg:mb-0 pb-12 lg:pb-0 mt-16 lg:mt-0 mx-6 lg:mx-0`)}>

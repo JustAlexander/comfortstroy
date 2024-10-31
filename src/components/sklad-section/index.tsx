@@ -68,7 +68,7 @@ const ListSection = () => (
               </li>
             ))}
             <li className={tw(`flex -mx-4 place-content-center`)}>
-              <NextLink href="#survey" passHref>
+              <NextLink href="/zamer" passHref>
                 <a>
                   <Button primary modifier="mt-6 mx-6">
                     Рассчитать стоимость с нашими материалами
