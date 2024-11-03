@@ -28,7 +28,9 @@ const Page = ({ children }: IProps) => (
       <CssBaseline />
       <div className={tw(`min-h-screen flex flex-col`)}>
         <Navigation />
-        {children}
+        <div className={tw(`mt-16`)}>
+          {children}
+        </div>
       </div>
     </ThemeProvider>
   </div>

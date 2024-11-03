@@ -81,9 +81,9 @@ const Navigation = () => {
   const toggleMenu = () => setShowMenu(!showMenu);
 
   return (
-    <nav className={tw(`bg-white`)}>
+    <nav className={tw(`bg-white fixed top-0 left-0 right-0 z-50 shadow-sm`)}>
       <div className={tw(`max-w-7xl mx-auto px-6 sm:px-6 lg:px-8`)}>
-        <div className={tw(`flex items-center justify-between h-24`)}>
+        <div className={tw(`flex items-center justify-between h-16`)}>  {/* Изменено с h-24 на h-16 */}
           <div className={tw(`flex items-center`)}>
             <div className={tw(`flex-shrink-0`)}>
               <NextLink href="/" passHref>
@@ -93,7 +93,7 @@ const Navigation = () => {
               </NextLink>
             </div>
             <div className={tw(`hidden md:block`)}>
-              <div className={tw(`ml-10 flex items-baseline space-x-4`)}>
+              <div className={tw(`ml-6 flex items-baseline space-x-4`)}>  {/* Уменьшен отступ ml-10 -> ml-6 */}
                 {links.map((link: Link) => (
                   <NextLink href={link.href} passHref key={link.label}>
                     <a className={tw(`text-gray-500 hover:text-gray-600 px-3 py-2 rounded-md font-medium`)}>{link.label}</a>
@@ -128,5 +128,4 @@ const Navigation = () => {
     </nav>
   );
 };
-
 export default Navigation;
