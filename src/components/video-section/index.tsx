@@ -20,7 +20,7 @@ export default function VideoSection() {
           <div className={tw(`w-full`)}>
             <div className={tw(`relative shadow-2xl mx-6 lg:mx-0`)}>
               {/* <Preferences width="100%" height="100%" /> */}
-              <Image src="/images/remont-kvartir-v-gelendzhike.jfif" width={600} height={400} layout="responsive" alt="Ремонт квартир в Краснодаре под ключ" />
+              <Image src="/images/remont-kvartir-v-gelendzhike.webp" width={600} height={400} layout="responsive" alt="Ремонт квартир в Краснодаре под ключ" />
               <button
                 onClick={handleClick}
                 type="button"
